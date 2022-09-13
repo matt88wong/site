@@ -1,0 +1,17 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+.navbar-container {
+    margin: 0;
+    height: $space-large;
+    background-color: $white;
+}
+
+.navbar-link {
+    @include navbar-link-text;
+    color: $carbon;
+    :hover {
+        color: $watermelon;
+    } 
+
+}

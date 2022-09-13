@@ -1,5 +1,7 @@
-@use '../Base';
+@use '../Base' as *;
 
-.home {
-    padding: Base.$space-medium;
+.home-container {
+    padding: $space-medium;
+    height: 100%;
+    background-color: $neutral;
 }

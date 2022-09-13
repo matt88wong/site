@@ -2,11 +2,15 @@ import react from 'react';
 //Style
 import '../../css/Pages/home.css';
 
+
+//Components
+import Navbar from '../../Components/Navbar';
+
 const Home = () => {
 
     return (
-        <div className="home">
-            ay yo fam
+        <div className="home-container">
+            <Navbar/>
         </div>
     );
 };
