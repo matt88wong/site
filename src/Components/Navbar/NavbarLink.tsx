@@ -8,12 +8,10 @@ interface NavbarLinkProps {
     title: string;
 }
 
-const NavbarLink = (props: NavbarLinkProps) => {
+export const NavbarLink = (props: NavbarLinkProps) => {
     return (
         <div className="navbar-link">
             <a>{props.title}</a>
         </div>
     );
 };
-
-export default NavbarLink;

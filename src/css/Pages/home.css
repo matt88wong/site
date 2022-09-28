@@ -1,5 +1,11 @@
-.home-container {
-  padding: 3rem;
-  height: 100%;
-  background-color: #EFEFEF;
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
+}
+body {
+  background-color: #F5F5F5;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }

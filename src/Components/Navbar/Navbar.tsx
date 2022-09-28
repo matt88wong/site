@@ -3,14 +3,12 @@ import react from 'react';
 import '../../css/Components/navbar.css';
 
 //Components
-import NavbarLink from './NavbarLink';
+import { NavbarLink } from './NavbarLink';
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <nav className="navbar-container">
             <NavbarLink title="About"/>
         </nav>
     );
 };
-
-export default Navbar;

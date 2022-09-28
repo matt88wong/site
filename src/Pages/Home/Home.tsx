@@ -4,9 +4,9 @@ import '../../css/Pages/home.css';
 
 
 //Components
-import Navbar from '../../Components/Navbar';
+import { Navbar } from '../../Components/Navbar';
 
-const Home = () => {
+export const Home = () => {
 
     return (
         <div className="home-container">
@@ -14,5 +14,3 @@ const Home = () => {
         </div>
     );
 };
-
-export default Home;

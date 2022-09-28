@@ -1,11 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
+}
 .navbar-container {
-  margin: 0;
-  height: 6rem;
   background-color: #FFFFFF;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navbar-link {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 20px;
   font-weight: bold;
   color: #A9A9A9;
