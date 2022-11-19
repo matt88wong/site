@@ -2,16 +2,40 @@
 @use '../Mixins/' as *;
 
 .navbar-container {
-    margin: 0;
-    height: $space-large;
     background-color: $white;
+    display: flex;
+    padding: $space-small 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-logo-container {
+    //Should be a logo
+
+    //Temporary placeholder
+    font-family: $standard-font;
+    font-size: $font-size-navbar-link;
+    color: $carbon;
+
+    //Keep this
+    margin-left: $space-small;
+    margin-right: auto;
+    cursor: pointer;
+
 }
 
 .navbar-link {
     @include navbar-link-text;
     color: $carbon;
-    :hover {
-        color: $watermelon;
+    cursor: pointer;
+    margin-right: $space-small;
+
+    a:hover {
+        color: $fresh;
     } 
 
+}
+
+.navbar-link:last-child {
+    margin-right: $space-medium;
 }

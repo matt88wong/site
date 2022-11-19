@@ -1,7 +1,9 @@
 @use '../Base' as *;
 
-.home-container {
-    padding: $space-medium;
-    height: 100%;
-    background-color: $neutral;
+body {
+    background-color: $whitesmoke;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }

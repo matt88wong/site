@@ -1,0 +1,27 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+.dropdown-container {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.dropdown-item {
+    @include navbar-link-text;
+    color: $carbon;
+    cursor: pointer;
+    padding: $space-extra-small $space-extra-small $space-extra-small 0;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    display: block;
+}

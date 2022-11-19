@@ -1,14 +1,19 @@
-//Font imports
-@import "../../../fonts/scss/fontawesome.scss";
+//Font imports via font face
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../fonts/Roboto/Roboto-Regular.ttf');
+}
 
-//Font path variables
-//Font Awesome
-$fa-font-path: "../../../fonts/webfonts";
 
 //Font styles
-$standard-font: "Open Sans";
+$standard-font: "Roboto";
 
 //Font sizes
 $font-size-text: 14px;
-$font-size-navbar-link: 20px;
+$font-size-navbar-link: 16px;
 $font-size-title: 42px;
+
+//Font weights
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;

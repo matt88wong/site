@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
+}
+.dropdown-container {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+.dropdown-item {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #A9A9A9;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}

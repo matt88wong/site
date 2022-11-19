@@ -10,12 +10,26 @@
   align-items: center;
 }
 
+.navbar-logo-container {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #A9A9A9;
+  margin-left: 1rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
 .navbar-link {
   font-family: "Roboto";
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
   color: #A9A9A9;
+  cursor: pointer;
+  margin-right: 1rem;
 }
-.navbar-link :hover {
-  color: #FF3B3F;
+.navbar-link a:hover {
+  color: #4ABDAC;
+}
+
+.navbar-link:last-child {
+  margin-right: 3rem;
 }
