@@ -15,7 +15,7 @@
 
 .dropdown-item {
     @include navbar-link-text;
-    color: $carbon;
+    color: $black;
     cursor: pointer;
     padding: $space-extra-small $space-extra-small $space-extra-small 0;
     display: block;

@@ -15,7 +15,7 @@
     //Temporary placeholder
     font-family: $standard-font;
     font-size: $font-size-navbar-link;
-    color: $carbon;
+    color: $black;
 
     //Keep this
     margin-left: $space-small;
@@ -26,7 +26,7 @@
 
 .navbar-link {
     @include navbar-link-text;
-    color: $carbon;
+    color: $black;
     cursor: pointer;
     margin-right: $space-small;
 
