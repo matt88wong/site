@@ -1,6 +1,3 @@
-
-
-import react from 'react';
 //Style
 import '../../css/Components/dropdown.css';
 
@@ -18,8 +15,8 @@ export const DropdownMenu = (props : DropdownMenuProps) => {
     const dropdownData = FetchDropdownData();
 
     var dropdownItemsData = dropdownData.funstuff;
-    //TODO: fix this up lol - when BE is introduced
-    //Pass the key into the BE
+    //TODO: fix this up lol - when BE/REDUX is introduced
+    //Pass the key into the BE/REDUX
     if (props.dropdownKey == 'funstuff') {
         dropdownItemsData = dropdownData.funstuff;
     }
