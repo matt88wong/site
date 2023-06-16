@@ -10,14 +10,15 @@
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: white;
+    background-color: $white;
+    top: $dropdown-space; //TODO: Refactor dropdowns to be cleanerrrrrr
 }
 
 .dropdown-item {
     @include navbar-link-text;
     color: $black;
     cursor: pointer;
-    padding: $space-extra-small $space-extra-small $space-extra-small 0;
+    padding: $space-extra-small 0;
     display: block;
     text-decoration: none;
 }

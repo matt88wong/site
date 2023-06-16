@@ -5,7 +5,7 @@ import react from 'react';
 import '../../css/Components/dropdown.css';
 
 //Utility
-import { ConvertDataToNavbarDropdownItems } from '../../Utility/Conversion';
+import { ConvertDropdownDataToNavbarDropdownItems } from '../../Utility/Conversion';
 
 //Types
 import { DropdownMenuProps } from '../../Types/Dropdown';
@@ -24,11 +24,11 @@ export const DropdownMenu = (props : DropdownMenuProps) => {
         dropdownItemsData = dropdownData.funstuff;
     }
             
-    const dropdownItems = ConvertDataToNavbarDropdownItems(dropdownItemsData);
+    const dropdownItems = ConvertDropdownDataToNavbarDropdownItems(dropdownItemsData);
 
     return (
-            <div className="dropdown-menu">
-                {dropdownItems}
-            </div>
+        <div className="dropdown-menu">
+            {dropdownItems}
+        </div>
     );
 };

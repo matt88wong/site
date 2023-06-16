@@ -1,5 +1,5 @@
 
-//Replace data imports with SQL/BE requests at some stage lol
+//Replace data imports with SQL/BE requests at some stage AND REDUX
 
 //Data
 import { NavbarDropdownData } from '../Source/Dropdown';

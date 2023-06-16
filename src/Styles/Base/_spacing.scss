@@ -1,10 +1,13 @@
 //Spacing - for margin and padding
-$space-medium: 3rem; // 24px
 $space-extra-small: 0.5rem; // 4px
 $space-small: 1rem; // 8px
+$space-medium-small: 2rem; // 16px
+$space-medium: 3rem; // 24px
 $space-large: 6rem; // 48px
-
 
 //Borders
 $border-thickness: 1px;
 $border-radius: 20px;
+
+//Random specifics that should be tidied up once refactoring is done ;)
+$dropdown-space: 51px; //Gives enough space on desktop to put dropdown menu underneath header
