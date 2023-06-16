@@ -1,31 +1,22 @@
+//Components
+import { DropdownItem } from "./DropdownItem";
+
 //Style
 import '../../css/Components/dropdown.css';
 
-//Utility
-import { ConvertDropdownDataToNavbarDropdownItems } from '../../Utility/Conversion';
-
 //Types
-import { DropdownMenuProps } from '../../Types/Dropdown';
-
-//Data
-import { FetchDropdownData } from '../../Data/Fetch';
-
+import { DropdownMenuProps, DropdownItemProps } from '../../Types/Dropdown';
 
 export const DropdownMenu = (props : DropdownMenuProps) => {
-    const dropdownData = FetchDropdownData();
-
-    var dropdownItemsData = dropdownData.funstuff;
-    //TODO: fix this up lol - when BE/REDUX is introduced
-    //Pass the key into the BE/REDUX
-    if (props.dropdownKey == 'funstuff') {
-        dropdownItemsData = dropdownData.funstuff;
-    }
-            
-    const dropdownItems = ConvertDropdownDataToNavbarDropdownItems(dropdownItemsData);
-
     return (
         <div className="dropdown-menu">
-            {dropdownItems}
+            {ConvertDropdownDataToNavbarDropdownItems(props.dropdownItemData)}
         </div>
     );
+};
+
+export function ConvertDropdownDataToNavbarDropdownItems (dropdownData: Array<DropdownItemProps>) {
+    return (dropdownData.map((item: DropdownItemProps) => (
+        <DropdownItem id={item.id} label={item.label} pageLink={item.pageLink}/>
+    )));
 };

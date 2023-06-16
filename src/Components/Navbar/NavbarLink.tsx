@@ -5,6 +5,7 @@ import '../../css/Components/dropdown.css';
 
 //Types
 import { ButtonProps }  from '../../Types/Button';
+import { DropdownItemProps } from '../../Types/Dropdown';
 
 //Components
 import { DropdownMenu } from '../Dropdown/DropdownMenu';
@@ -12,14 +13,14 @@ import { DropdownMenu } from '../Dropdown/DropdownMenu';
 //Props
 interface NavbarLinkProps extends ButtonProps {
     title: string;
-    dropdown?: boolean;
+    dropdownItems?: DropdownItemProps[];
 }
  
 export const NavbarLink = ( props: NavbarLinkProps ) => {
     return (
-        <div className={"navbar-link " + (props.dropdown ? "dropdown-container": "") }>
+        <div className={"navbar-link " + (props.dropdownItems ? "dropdown-container": "") }>
                 <a>{props.title}</a>
-                {props.dropdown && <DropdownMenu dropdownKey={props.title}/>}
+                {props.dropdownItems && <DropdownMenu dropdownKey={props.title} dropdownItemData={props.dropdownItems}/>}
         </div>
     );
 };

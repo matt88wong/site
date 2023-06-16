@@ -1,0 +1,21 @@
+{
+    "dropdownItems": {
+        "funStuff":  {
+            "music": {
+                "label": "music",
+                "pageLink": "funStuff/music",
+                "type": "navbar"
+            },
+            "food": {
+                "label": "food",
+                "pageLink": "funStuff/food",
+                "type": "navbar"
+            },
+            "football": {
+                "label": "football takes",
+                "pageLink": "funStuff/football",
+                "type": "navbar"
+            }
+        }
+    }
+}

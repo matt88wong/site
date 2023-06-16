@@ -8,10 +8,10 @@ import '../../css/Components/dropdown.css';
 import { DropdownItemProps } from '../../Types/Dropdown';
 
 
-export const DropdownItem = ({id, label, link}: DropdownItemProps) => {
+export const DropdownItem = ({id, label, pageLink}: DropdownItemProps) => {
 
     return (
-        <a className="dropdown-item" id={id} href={link}>
+        <a className="dropdown-item" id={id} href={pageLink}>
             {label}
         </a>
     );

@@ -1,9 +1,10 @@
 export interface DropdownMenuProps {
     dropdownKey: string;
+    dropdownItemData: DropdownItemProps[]
 }
 
 export interface DropdownItemProps {
     id? : string;
-    link: string;
+    pageLink: string;
     label: string;
 }
