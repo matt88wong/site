@@ -1,21 +1,36 @@
 {
-    "dropdownItems": {
+    "pageLinks": {
         "funStuff":  {
             "music": {
                 "label": "music",
-                "pageLink": "funStuff/music",
+                "pageLink": "/music",
                 "type": "navbar"
             },
             "food": {
                 "label": "food",
-                "pageLink": "funStuff/food",
+                "pageLink": "/food",
                 "type": "navbar"
             },
             "football": {
                 "label": "football takes",
-                "pageLink": "funStuff/football",
+                "pageLink": "/football",
                 "type": "navbar"
             }
+        },
+        "aboutMe": {
+            "label": "about me",
+            "pageLink": "/about",
+            "type": "navbar"
+        },
+        "portfolio": {
+            "label": "portfolio",
+            "pageLink": "/portfolio",
+            "type": "navbar"
+        },
+        "professional": {
+            "label": "professional",
+            "pageLink": "/professional",
+            "type": "navbar"
         }
     }
 }

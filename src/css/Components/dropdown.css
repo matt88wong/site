@@ -23,6 +23,10 @@
   display: block;
   text-decoration: none;
 }
+.dropdown-item a {
+  color: #000000;
+  text-decoration: none;
+}
 
 .dropdown-container:hover .dropdown-menu {
   display: block;

@@ -26,6 +26,10 @@
   cursor: pointer;
   margin-right: 1rem;
 }
+.navbar-link a {
+  color: #000000;
+  text-decoration: none;
+}
 .navbar-link a:hover {
   color: #4ABDAC;
 }

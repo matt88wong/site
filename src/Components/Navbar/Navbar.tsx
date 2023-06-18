@@ -16,26 +16,26 @@ export const Navbar = () => {
 
     const funStuffDropdownItems: DropdownItemProps[] = [
         {
-            "label": TextResources.dropdownItems.funStuff.music.label,
-            "pageLink": TextResources.dropdownItems.funStuff.music.pageLink
+            "label": TextResources.pageLinks.funStuff.music.label,
+            "pageLink": TextResources.pageLinks.funStuff.music.pageLink
         },
         {
-            "label": TextResources.dropdownItems.funStuff.food.label,
-            "pageLink": TextResources.dropdownItems.funStuff.food.pageLink
+            "label": TextResources.pageLinks.funStuff.food.label,
+            "pageLink": TextResources.pageLinks.funStuff.food.pageLink
         },
         {
-            "label": TextResources.dropdownItems.funStuff.football.label,
-            "pageLink": TextResources.dropdownItems.funStuff.football.pageLink
+            "label": TextResources.pageLinks.funStuff.football.label,
+            "pageLink": TextResources.pageLinks.funStuff.football.pageLink
         },
     ]
 
     return (
         <nav className="navbar-container">
             <NavbarLogo/>
-            <NavbarLink pageLink="" title="about me"/>
-            <NavbarLink pageLink="" title="fun stuff" dropdownItems={funStuffDropdownItems}/>
-            <NavbarLink pageLink="" title="portfolio"/>
-            <NavbarLink pageLink="" title="professional"/>
+            <NavbarLink pageLink={TextResources.pageLinks.aboutMe.pageLink} label={TextResources.pageLinks.aboutMe.label}/>
+            <NavbarLink pageLink="" label="fun stuff" dropdownItems={funStuffDropdownItems}/>
+            <NavbarLink pageLink={TextResources.pageLinks.portfolio.pageLink} label={TextResources.pageLinks.portfolio.label}/>
+            <NavbarLink pageLink={TextResources.pageLinks.professional.pageLink} label={TextResources.pageLinks.professional.label}/>
         </nav>
     );
 };
