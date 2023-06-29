@@ -31,6 +31,11 @@
             "label": "professional",
             "pageLink": "/professional",
             "type": "navbar"
+        },
+        "home": {
+            "label": "home",
+            "pageLink": "/",
+            "type": "navbar"
         }
     }
 }

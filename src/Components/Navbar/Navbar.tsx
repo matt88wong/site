@@ -31,7 +31,7 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar-container">
-            <NavbarLogo/>
+            <NavbarLogo pageLink={TextResources.pageLinks.home.pageLink} />
             <NavbarLink pageLink={TextResources.pageLinks.aboutMe.pageLink} label={TextResources.pageLinks.aboutMe.label}/>
             <NavbarLink pageLink="" label="fun stuff" dropdownItems={funStuffDropdownItems}/>
             <NavbarLink pageLink={TextResources.pageLinks.portfolio.pageLink} label={TextResources.pageLinks.portfolio.label}/>
