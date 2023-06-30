@@ -37,5 +37,17 @@
             "pageLink": "/",
             "type": "navbar"
         }
+    },
+
+    "pageContent" : {
+        "home": {
+            "intro": {
+                "title": "Hello, welcome.",
+                "name": "Matthew Wong.",
+                "nameHeader": "My name is ",
+                "whatIdoHeader": "I create stuff for the web.",
+                "statement": "I'm a full stack software developer based in Auckland, NZ."
+            }
+        }
     }
 }

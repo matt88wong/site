@@ -6,7 +6,11 @@
     font-size: $font-size-text;
 }
 
-//Main title font mixin
+//Header-text
+@mixin header-text {
+    font-family: $standard-font;
+    font-size: $font-size-title;
+}
 
 //Navbar link
 @mixin navbar-link-text {

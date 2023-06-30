@@ -1,4 +1,5 @@
 @use '../Base' as *;
+@use '../Mixins/' as *;
 
 body {
     background-color: $whitesmoke;
@@ -6,4 +7,21 @@ body {
     width: auto;
     margin: 0;
     padding: 0;
+}
+
+.intro-header-container {
+    
+   @include regular-text;
+   font-weight: $font-weight-medium;
+   padding-top: $space-medium;
+   padding-left: $space-large;
+   line-height: $line-height-large;
+
+   h1 {
+    @include header-text;
+   }
+}
+
+.intro-name {
+    color: $fresh;
 }

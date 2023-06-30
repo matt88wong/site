@@ -9,3 +9,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.intro-header-container {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  line-height: 2rem;
+}
+.intro-header-container h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+}
+
+.intro-name {
+  color: #4ABDAC;
+}
