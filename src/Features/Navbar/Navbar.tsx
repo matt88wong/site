@@ -1,4 +1,3 @@
-import react from 'react';
 //Style
 import '../../css/Components/navbar.css';
 

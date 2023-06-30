@@ -10,7 +10,7 @@ import { ButtonProps }  from '../../Types/Button';
 import { DropdownItemProps } from '../../Types/Dropdown';
 
 //Components
-import { DropdownMenu } from '../Dropdown/DropdownMenu';
+import { DropdownMenu } from '../../Components';
 
 //Props
 interface NavbarLinkProps extends ButtonProps {
