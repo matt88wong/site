@@ -1,5 +1,5 @@
 import { Home, Music } from './Pages';
-import { Navbar } from './Features/Navbar/Navbar';
+import { Navbar } from './Features';
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 function App() {

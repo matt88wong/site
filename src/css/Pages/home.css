@@ -3,19 +3,22 @@
   src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
 }
 body {
-  background-color: #F5F5F5;
   height: auto;
   width: auto;
   margin: 0;
   padding: 0;
 }
 
+.home-container {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  border-style: dotted;
+}
+
 .intro-header-container {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
-  padding-top: 3rem;
-  padding-left: 6rem;
   line-height: 2rem;
 }
 .intro-header-container h1 {
@@ -25,4 +28,8 @@ body {
 
 .intro-name {
   color: #4ABDAC;
+}
+
+.home-content-container {
+  padding-top: 1rem;
 }

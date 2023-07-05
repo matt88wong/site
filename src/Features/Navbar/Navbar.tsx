@@ -1,5 +1,5 @@
 //Style
-import '../../css/Components/navbar.css';
+import '../../css/Features/navbar.css';
 
 //Components
 import { NavbarLink } from './NavbarLink';
@@ -9,7 +9,7 @@ import { NavbarLogo } from './NavbarLogo';
 import TextResources from '../../Content/TextResources.json';
 
 //Types
-import { DropdownItemProps } from '../../Types/Dropdown';
+import { DropdownItemProps } from '../../Types/Components/Dropdown';
 
 export const Navbar = () => {
 
@@ -30,7 +30,7 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar-container">
-            <NavbarLogo pageLink={TextResources.pageLinks.home.pageLink} />
+            <NavbarLogo pageLink={TextResources.pageLinks.home.pageLink} label={TextResources.pageLinks.home.label}/>
             <NavbarLink pageLink={TextResources.pageLinks.aboutMe.pageLink} label={TextResources.pageLinks.aboutMe.label}/>
             <NavbarLink pageLink="" label="fun stuff" dropdownItems={funStuffDropdownItems}/>
             <NavbarLink pageLink={TextResources.pageLinks.portfolio.pageLink} label={TextResources.pageLinks.portfolio.label}/>

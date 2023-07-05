@@ -10,7 +10,7 @@
 }
 
 .navbar-logo-container {
-    margin-left: $space-large;
+    margin-left: $space-medium;
     margin-right: auto;
     cursor: pointer;
 }
@@ -24,7 +24,6 @@
     a:hover {
         color: $fresh;
     } 
-
 }
 
 .navbar-link:last-child {

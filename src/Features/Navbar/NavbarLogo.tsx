@@ -2,12 +2,12 @@
 import { NavbarLink } from './NavbarLink';
 
 //Style
-import '../../css/Components/navbar.css';
+import '../../css/Features/navbar.css';
 
 //Types
-import { ButtonProps }  from '../../Types/Button';
+import { NavbarLinkProps }  from '../../Types/Features/NavbarLink';
 
-export const NavbarLogo = ( props: ButtonProps ) => {
+export const NavbarLogo = ( props: NavbarLinkProps ) => {
     return (
         <div className="navbar-logo-container">
             {/* <img src={ logo } width="500" height="300" alt='Matthew Wong' /> */}

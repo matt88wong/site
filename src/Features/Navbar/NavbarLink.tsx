@@ -2,21 +2,14 @@
 import { Link } from 'react-router-dom';
 
 //Style
-import '../../css/Components/navbar.css';
+import '../../css/Features/navbar.css';
 import '../../css/Components/dropdown.css';
 
 //Types
-import { ButtonProps }  from '../../Types/Button';
-import { DropdownItemProps } from '../../Types/Dropdown';
+import { NavbarLinkProps } from '../../Types/Features/NavbarLink';
 
 //Components
 import { DropdownMenu } from '../../Components';
-
-//Props
-interface NavbarLinkProps extends ButtonProps {
-    label: string;
-    dropdownItems?: DropdownItemProps[];
-}
  
 export const NavbarLink = ( props: NavbarLinkProps ) => {
     return (

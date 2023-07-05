@@ -11,14 +11,14 @@
 }
 
 .navbar-logo-container {
-  margin-left: 6rem;
+  margin-left: 3rem;
   margin-right: auto;
   cursor: pointer;
 }
 
 .navbar-link {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   cursor: pointer;
   margin-right: 1rem;

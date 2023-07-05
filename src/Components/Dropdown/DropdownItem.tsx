@@ -2,7 +2,7 @@
 import '../../css/Components/dropdown.css';
 
 //Types
-import { DropdownItemProps } from '../../Types/Dropdown';
+import { DropdownItemProps } from '../../Types/Components/Dropdown';
 
 
 export const DropdownItem = ({id, label, pageLink}: DropdownItemProps) => {

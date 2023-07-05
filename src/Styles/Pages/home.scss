@@ -2,19 +2,22 @@
 @use '../Mixins/' as *;
 
 body {
-    background-color: $whitesmoke;
     height: auto;
     width: auto;
     margin: 0;
     padding: 0;
 }
 
+.home-container {
+    padding-top: $space-medium;
+    padding-left: $space-medium;
+
+    border-style: dotted;
+}
+
 .intro-header-container {
-    
    @include regular-text;
    font-weight: $font-weight-medium;
-   padding-top: $space-medium;
-   padding-left: $space-large;
    line-height: $line-height-large;
 
    h1 {
@@ -24,4 +27,8 @@ body {
 
 .intro-name {
     color: $fresh;
+}
+
+.home-content-container {
+    padding-top: $space-small;
 }

@@ -5,7 +5,7 @@ import { DropdownItem } from "./DropdownItem";
 import '../../css/Components/dropdown.css';
 
 //Types
-import { DropdownMenuProps, DropdownItemProps } from '../../Types/Dropdown';
+import { DropdownMenuProps, DropdownItemProps } from '../../Types/Components/Dropdown';
 
 export const DropdownMenu = (props : DropdownMenuProps) => {
     return (

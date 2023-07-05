@@ -1,9 +1,15 @@
 @use '../Base' as *;
 
-//Regular text font mixin
+//Regular text 
 @mixin regular-text {
     font-family: $standard-font;
     font-size: $font-size-text;
+}
+
+//Button text
+@mixin button-text {
+    font-family: $standard-font;
+    font-size: $font-size-button;
 }
 
 //Header-text
@@ -15,7 +21,7 @@
 //Navbar link
 @mixin navbar-link-text {
     font-family: $standard-font;
-    font-size: $font-size-navbar-link;
+    font-size: $font-size-button;
 
     a {
         color: $black;
