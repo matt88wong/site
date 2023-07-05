@@ -1,13 +1,6 @@
 @use '../Base' as *;
 @use '../Mixins/' as *;
 
-body {
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-}
-
 .home-container {
     padding-top: $space-medium;
     padding-left: $space-medium;

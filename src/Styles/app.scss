@@ -1,0 +1,9 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+body {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
