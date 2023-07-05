@@ -3,11 +3,13 @@ $space-extra-small: 0.5rem; // 4px
 $space-small: 1rem; // 8px
 $space-medium-small: 2rem; // 16px
 $space-medium: 3rem; // 24px
+$space-medium-large: 4.5rem; //36px;
 $space-large: 6rem; // 48px
 
 //Borders
-$border-thickness: 1px;
-$border-radius: 20px;
+$border-thickness-regular: 2px;
+$border-thickness-thicc: 12px;
+$border-radius-regular: 24px;
 
 //Line height
 $line-height-medium: 1rem;
@@ -15,4 +17,4 @@ $line-height-medium-large: 1.5rem;
 $line-height-large: 2rem;
 
 //Media queries
-$media-query-large: 1024px;
+$media-query-large: 1536px;

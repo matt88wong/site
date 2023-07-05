@@ -1,0 +1,7 @@
+@use '../Base' as *;
+
+//Fade border
+@mixin fade-border{
+    border: $border-thickness-thicc solid $fresh;
+    border-radius: $border-radius-regular;
+}

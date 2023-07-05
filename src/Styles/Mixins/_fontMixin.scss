@@ -3,25 +3,33 @@
 //Regular text 
 @mixin regular-text {
     font-family: $standard-font;
-    font-size: $font-size-text;
+    font-size: $font-size-small-text;
+
+    @media (min-width: $media-query-large) {   
+        font-size: $font-size-text;
+    }
 }
 
 //Button text
 @mixin button-text {
     font-family: $standard-font;
-    font-size: $font-size-button;
+    font-size: $font-size-small-text;
 }
 
 //Header-text
 @mixin header-text {
     font-family: $standard-font;
-    font-size: $font-size-title;
+    font-size: $font-size-small-title;
+
+    @media (min-width: $media-query-large) {   
+        font-size: $font-size-title;
+    }
 }
 
 //Navbar link
 @mixin navbar-link-text {
     font-family: $standard-font;
-    font-size: $font-size-button;
+    font-size: $font-size-small-text;
 
     a {
         color: $black;

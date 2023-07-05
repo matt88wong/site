@@ -2,26 +2,35 @@
 @use '../Mixins/' as *;
 
 .home-container {
-    padding-top: $space-medium;
-    padding-left: $space-medium;
+    @include regular-text;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-large;
 
-    border-style: dotted;
+    h1 {
+        @include header-text;
+    }
+    
+    @media (min-width: $media-query-large) {
+
+        font-weight: $font-weight-medium;
+        line-height: $line-height-large;
+    }
+
+    //TODO: REPLACE WITH FLEXBOX OR GRID OMFG
+    display: inline-block;
 }
 
-.intro-header-container {
-   @include regular-text;
-   font-weight: $font-weight-medium;
-   line-height: $line-height-large;
+.home-leftside-container {
+    @include fade-border;
+    margin: $space-medium;
+    padding: $space-medium-small;
 
-   h1 {
-    @include header-text;
-   }
+    @media (min-width: $media-query-large) {
+        margin: $space-large;
+        padding: $space-medium-large $space-medium;
+    }
 }
 
 .intro-name {
     color: $fresh;
-}
-
-.home-content-container {
-    padding-top: $space-small;
 }

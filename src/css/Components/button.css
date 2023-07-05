@@ -27,10 +27,9 @@ button {
 .button-regular {
   font-family: "Roboto";
   font-size: 20px;
-  color: #FFFFFF;
-  background-color: #2194E0;
+  background-color: #FFC91A;
 }
 
 .button-regular:hover {
-  box-shadow: 50px 100px;
+  box-shadow: 6px 12px;
 }

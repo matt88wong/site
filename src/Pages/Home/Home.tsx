@@ -18,7 +18,7 @@ export const Home = () => {
 
     return (
         <div className="home-container">
-            <div className="intro-header-container">
+            <div className="home-leftside-container">
                 <Fade duration={FADEDURATION} direction='down'>
                     <p>
                         {TextResources.pageContent.home.intro.title}
@@ -40,9 +40,9 @@ export const Home = () => {
                         {TextResources.pageContent.home.intro.statement}
                     </p>
                 </Fade>
-            </div>
-            <div className="home-content-container">
-                <DownloadCvButton/>
+                <Fade duration={FADEDURATION} direction='left'>
+                    <DownloadCvButton/>
+                </Fade>
             </div>
         </div>
     );
