@@ -3,6 +3,9 @@
 
 .home-container {
     @include regular-text;
+    //TODO: REPLACE WITH FLEXBOX OR GRID OMFG
+    display: flex;
+    flex-direction: row;
     font-weight: $font-weight-medium;
     line-height: $line-height-large;
 
@@ -11,17 +14,26 @@
     }
     
     @media (min-width: $media-query-large) {
-
         font-weight: $font-weight-medium;
         line-height: $line-height-large;
     }
-
-    //TODO: REPLACE WITH FLEXBOX OR GRID OMFG
-    display: inline-block;
 }
 
 .home-leftside-container {
     @include fade-border;
+    margin: $space-medium;
+    padding: $space-medium-small;
+
+    @media (min-width: $media-query-large) {
+        margin: $space-large;
+        padding: $space-medium-large $space-medium;
+    }
+}
+
+.home-rightside-container {
+    //TODO: CHANGE THIS WHEN WORKING ON RIGHTSIDE CONTENT
+    border: $border-thickness-thicc dotted $fresh;
+    border-radius: $border-radius-regular;
     margin: $space-medium;
     padding: $space-medium-small;
 

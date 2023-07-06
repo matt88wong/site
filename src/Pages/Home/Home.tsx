@@ -44,6 +44,9 @@ export const Home = () => {
                     <DownloadCvButton/>
                 </Fade>
             </div>
+            <div className="home-rightside-container">
+                <div>add photo and content foooo schtuff idk</div>
+            </div>
         </div>
     );
 };
