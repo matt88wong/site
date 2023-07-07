@@ -3,7 +3,7 @@ export interface ButtonProps {
     onClick?: () => {};
     iconLink?: string;
     size?: 'small' | 'medium' | 'large';
-    style?: 'regular' | 'offset' | 'raise';
     target?: '_blank';
+    type?: 'regular' | 'offset' | 'raise';
     href?: string;
 }

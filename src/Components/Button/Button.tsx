@@ -6,7 +6,7 @@ import '../../css/Components/button.css';
 
 export const Button = (props : ButtonProps) => {
 
-    const {href, label, onClick, size, style, target} = props;
+    const {href, label, onClick, size, target, type} = props;
 
     const getButtonSize = () => {
         switch(size) {
@@ -24,8 +24,8 @@ export const Button = (props : ButtonProps) => {
         };
     }
 
-    const getButtonStyle = () => {
-        switch(style) {
+    const getButtonType = () => {
+        switch(type) {
             case 'regular': {
                 return 'button-regular';
             }
@@ -37,7 +37,7 @@ export const Button = (props : ButtonProps) => {
         };
     }
     return (
-        <a href={href} target={target} className={getButtonSize() + ' ' + getButtonStyle()} onClick={onClick}>
+        <a href={href} target={target} className={getButtonSize() + ' ' + getButtonType()} onClick={onClick}>
             <span className={'button-text'}>{label}</span>
         </a>
     );
