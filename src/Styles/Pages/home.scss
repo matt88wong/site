@@ -21,7 +21,7 @@
 
 .home-leftside-container {
     @include fade-border;
-    margin: $space-medium;
+    margin: $space-medium $space-small $space-medium $space-medium;
     padding: $space-medium-small;
 
     @media (min-width: $media-query-large) {

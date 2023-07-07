@@ -43,9 +43,11 @@ export const Home = () => {
                 <Fade duration={FADEDURATION} direction='left'>
                     <DownloadCvButton/>
                 </Fade>
+                *put the social links down belowwww*
             </div>
             <div className="home-rightside-container">
                 <div>add photo and content foooo schtuff idk</div>
+                <div>skilllzzzzzz with like slideshow carousel and all the logoszzz</div>
             </div>
         </div>
     );
