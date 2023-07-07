@@ -14,3 +14,11 @@
     }
 };
 
+//Raise button
+@mixin raise-button{
+    &:hover {
+        box-shadow: 0 0.5rem 0.5rem 0 yellow;
+        transform: translateY(-0.25rm)
+    }
+};
+
