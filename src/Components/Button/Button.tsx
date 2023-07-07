@@ -1,8 +1,8 @@
-//Types
-import { ButtonProps } from '../../Types/Components/Button';
-
 //Style
 import '../../css/Components/button.css';
+
+//Types
+import { ButtonProps } from '../../Types/Components/Button';
 
 export const Button = (props : ButtonProps) => {
 
@@ -38,7 +38,7 @@ export const Button = (props : ButtonProps) => {
     }
     return (
         <a href={href} target={target} className={getButtonSize() + ' ' + getButtonType()} onClick={onClick}>
-            <span className={'button-text'}>{label}</span>
+            <span>{label}</span>
         </a>
     );
 };
