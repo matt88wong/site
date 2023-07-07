@@ -5,10 +5,12 @@ a {
     @include button-text;
 
     background-color: $white;
+    color: inherit;
     cursor: pointer;
     display: inline-block;
     // margin: $space-extra-small;
     text-align: center;
+    text-decoration: none;
     transition: 400ms;
 }
 

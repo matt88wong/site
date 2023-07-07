@@ -6,9 +6,11 @@ a {
   font-family: "Roboto";
   font-size: 20px;
   background-color: #FFFFFF;
+  color: inherit;
   cursor: pointer;
   display: inline-block;
   text-align: center;
+  text-decoration: none;
   transition: 400ms;
 }
 
@@ -28,6 +30,6 @@ a {
   box-shadow: 0.3rem 0.3rem 0 0 #4ABDAC, inset 0.3rem 0.3rem 0 0 #4ABDAC;
   border: none;
 }
-.button-offset:hover, .button-offset:focus {
+.button-offset:hover {
   box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 4.5rem 0 0 #4abd8d;
 }

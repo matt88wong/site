@@ -6,8 +6,7 @@
         $box-shadow-space $box-shadow-space 0 0 $fresh,
         inset $box-shadow-space $box-shadow-space 0 0 $fresh;
 
-    &:hover,
-    &:focus {
+    &:hover {
         //making top part of box-shadow cover button
         box-shadow: 
             0 0 0 0 $fresh,
