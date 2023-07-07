@@ -7,9 +7,8 @@ button {
   text-align: center;
   cursor: pointer;
   transition: 400ms;
-  border-style: solid;
-  border-width: 0;
-  border-radius: 16px;
+  border: none;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .button-size-large {
@@ -27,9 +26,9 @@ button {
 .button-regular {
   font-family: "Roboto";
   font-size: 20px;
-  background-color: #FFC91A;
+  box-shadow: 0.3rem 0.3rem 0 0 #4ABDAC, inset 0.3rem 0.3rem 0 0 #4ABDAC;
+  background-color: #FFFFFF;
 }
-
-.button-regular:hover {
-  box-shadow: 6px 12px;
+.button-regular:hover, .button-regular:focus {
+  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 3.5rem 0 0 #4abd7e;
 }

@@ -1,0 +1,17 @@
+@use '../Base' as *;
+
+//Offset button
+@mixin offset-button{
+    box-shadow: 
+        $box-shadow-space $box-shadow-space 0 0 $fresh,
+        inset $box-shadow-space $box-shadow-space 0 0 $fresh;
+
+    &:hover,
+    &:focus {
+        //making top part of box-shadow cover button
+        box-shadow: 
+            0 0 0 0 $fresh,
+            inset 6rem 3.5rem 0 0 adjust-hue($fresh, -24deg);
+    }
+};
+
