@@ -8250,3 +8250,8 @@ a {
 .button-offset:hover {
   box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 4.5rem 0 0 #4abd8d;
 }
+
+.button-raise:hover {
+  box-shadow: 0 0.5rem 0.5rem 0 yellow;
+  transform: translateY(-0.25rm);
+}

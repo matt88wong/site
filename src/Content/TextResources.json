@@ -41,12 +41,31 @@
 
     "pageContent" : {
         "home": {
-            "intro": {
-                "title": "Hello, welcome.",
-                "name": "Matthew Wong.",
-                "nameHeader": "My name is ",
-                "whatIdoHeader": "I create stuff for the web.",
-                "statement": "I'm a full stack software developer based in Auckland, NZ."
+            "leftHandSide": {
+                "intro": {
+                    "title": "Hello, welcome.",
+                    "name": "Matthew Wong.",
+                    "nameHeader": "My name is ",
+                    "whatIdoHeader": "I create stuff for the web.",
+                    "statement": "I'm a full stack software developer based in Auckland, NZ."
+                },
+                "socialMediaIcons": {
+                    "labels": {
+                        "youtube": "Matt W creates things",
+                        "github": "https://github.com/matt88wong",
+                        "linkedin": "https://www.linkedin.com/in/mwong-developer",
+                        "instagram": "allmattzaremadeup"
+                    },
+                    "links": {
+                        "youtube": "https://www.youtube.com/@Matt_W_Creates_Things",
+                        "github": "https://github.com/matt88wong",
+                        "linkedin": "https://www.linkedin.com/in/mwong-developer",
+                        "instagram": "https://www.instagram.com/allmattzaremadeup/"
+                    }
+                }
+            },
+            "rightHandSide": {
+
             }
         }
     }
