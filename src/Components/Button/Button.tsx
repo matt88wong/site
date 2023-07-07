@@ -29,6 +29,9 @@ export const Button = (props : ButtonProps) => {
             case 'regular': {
                 return 'button-regular';
             }
+            case 'offset': {
+                return 'button-offset';
+            }
             default: 
                 return 'button-regular';
         };

@@ -11,7 +11,7 @@
         //making top part of box-shadow cover button
         box-shadow: 
             0 0 0 0 $fresh,
-            inset 6rem 3.5rem 0 0 adjust-hue($fresh, -24deg);
+            inset 6rem 3.5rem 0 0 adjust-hue($fresh, -16deg);
     }
 };
 

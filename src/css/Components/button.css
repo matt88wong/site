@@ -3,12 +3,14 @@
   src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
 }
 button {
-  display: inline-block;
-  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  background-color: #FFFFFF;
   cursor: pointer;
-  transition: 400ms;
-  border: none;
+  display: inline-block;
   margin: 1rem 1rem 1rem 0;
+  text-align: center;
+  transition: 400ms;
 }
 
 .button-size-large {
@@ -23,12 +25,10 @@ button {
   padding: 0.5rem 1rem;
 }
 
-.button-regular {
-  font-family: "Roboto";
-  font-size: 20px;
+.button-offset {
   box-shadow: 0.3rem 0.3rem 0 0 #4ABDAC, inset 0.3rem 0.3rem 0 0 #4ABDAC;
-  background-color: #FFFFFF;
+  border: none;
 }
-.button-regular:hover, .button-regular:focus {
-  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 3.5rem 0 0 #4abd7e;
+.button-offset:hover, .button-offset:focus {
+  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 3.5rem 0 0 #4abd8d;
 }

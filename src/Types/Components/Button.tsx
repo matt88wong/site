@@ -3,5 +3,5 @@ export interface ButtonProps {
     onClick?: () => {};
     iconLink?: string;
     size?: 'small' | 'medium' | 'large';
-    style?: 'regular';
+    style?: 'regular' | 'offset' | 'raise';
 }

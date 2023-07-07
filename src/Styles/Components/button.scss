@@ -2,12 +2,14 @@
 @use '../Mixins/' as *;
 
 button {
-    display: inline-block;
-    text-align: center;
+    @include button-text;
+
+    background-color: $white;
     cursor: pointer;
-    transition: 400ms;
-    border: none;
+    display: inline-block;
     margin: $space-small $space-small $space-small 0;
+    text-align: center;
+    transition: 400ms;
 }
 
 .button-size-large {
@@ -23,7 +25,10 @@ button {
 }
 
 .button-regular {
-    @include button-text;
+}
+
+.button-offset {
     @include offset-button;
-    background-color: $white;
+
+    border: none;
 }
