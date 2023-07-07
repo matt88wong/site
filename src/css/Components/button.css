@@ -2,13 +2,12 @@
   font-family: "Roboto";
   src: url("../../../fonts/Roboto/Roboto-Regular.ttf");
 }
-button {
+a {
   font-family: "Roboto";
   font-size: 20px;
   background-color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  margin: 1rem 1rem 1rem 0;
   text-align: center;
   transition: 400ms;
 }
@@ -30,5 +29,5 @@ button {
   border: none;
 }
 .button-offset:hover, .button-offset:focus {
-  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 3.5rem 0 0 #4abd8d;
+  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 4.5rem 0 0 #4abd8d;
 }

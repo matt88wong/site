@@ -1,27 +1,27 @@
 @use '../Base' as *;
 @use '../Mixins/' as *;
 
-button {
+a {
     @include button-text;
 
     background-color: $white;
     cursor: pointer;
     display: inline-block;
-    margin: $space-small $space-small $space-small 0;
+    // margin: $space-extra-small;
     text-align: center;
     transition: 400ms;
 }
 
 .button-size-large {
-    padding: 2rem 3rem;
+    padding: $space-medium-small $space-medium;
 }
 
 .button-size-medium {
-    padding: 1rem 2rem;
+    padding: $space-small $space-medium-small;
 }
 
 .button-size-small {
-    padding: 0.5rem 1rem;
+    padding: $space-extra-small $space-small;
 }
 
 .button-regular {

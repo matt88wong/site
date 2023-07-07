@@ -2,5 +2,5 @@
 import { Button } from '../../Components';
 
 export const DownloadCvButton = () => {
-    return (<Button style='offset' label='View my CV' />);
+    return (<Button target='_blank' style='offset' label='View my CV' />);
 };

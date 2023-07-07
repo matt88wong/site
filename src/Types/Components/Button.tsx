@@ -4,4 +4,6 @@ export interface ButtonProps {
     iconLink?: string;
     size?: 'small' | 'medium' | 'large';
     style?: 'regular' | 'offset' | 'raise';
+    target?: '_blank';
+    href?: string;
 }
