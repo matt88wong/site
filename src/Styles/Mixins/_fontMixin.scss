@@ -16,7 +16,7 @@
     font-size: $font-size-small-text;
 }
 
-//Header-text
+//Header text
 @mixin header-text {
     font-family: $standard-font;
     font-size: $font-size-small-title;
@@ -35,4 +35,10 @@
         color: $black;
         text-decoration: none;
     }
+}
+
+//Tooltip text
+@mixin tooltip-text {
+    font-family: $standard-font;
+    font-size: $font-size-extra-small-text;
 }

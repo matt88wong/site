@@ -8219,6 +8219,9 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
+.icon-container {
+  margin-top: 1rem;
+}
 .icon-container img:hover {
   transform: translateY(-0.5rem);
 }

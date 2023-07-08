@@ -2,6 +2,8 @@
 @use '../Mixins/' as *;
 
 .icon-container {
+    margin-top: $space-small;
+
     img:hover {
         transform: translateY(-0.5rem);
     }
