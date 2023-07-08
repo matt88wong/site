@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 //Pages
-import { Home, Music } from './Pages';
+import { CoolStuff, Home } from './Pages';
 
 //Features
 import { Navbar } from './Features';
@@ -17,12 +17,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<div>create about page!</div>} />
-            <Route path="portfolio" element={<div>create portfolio page!</div>} />
-            <Route path="professional" element={<div>create professional page!</div>} />
-            <Route path="music" element={<Music/>} />
-            <Route path="food" element={<div>create food page!</div>} />
-            <Route path="football" element={<div>create football page!</div>} />
+          <Route path="portfolio" element={<div>create portfolio page!</div>} />
+          <Route path="coolstuff" element={<CoolStuff />} />
         </Routes>
         <Outlet />    
       </BrowserRouter>

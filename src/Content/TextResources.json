@@ -1,5 +1,10 @@
 {
     "pageLinks": {
+        "coolStuff": {
+            "label": "cool stuff",
+            "pageLink": "/coolstuff",
+            "type": "navbar"
+        },
         "funStuff":  {
             "music": {
                 "label": "music",
