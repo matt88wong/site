@@ -1,0 +1,10 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+.icon-container {
+    @include circular-border;
+
+    img:hover {
+        transform: translateY(-0.5rem);
+    }
+}

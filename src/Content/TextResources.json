@@ -50,6 +50,12 @@
                     "statement": "I'm a full stack software developer based in Auckland, NZ."
                 },
                 "socialMediaIcons": {
+                    "iconName": {
+                        "linkedin": "linkedin_logo",
+                        "youtube": "youtube_logo",
+                        "instagram": "instagram_logo",
+                        "github": "github_logo"
+                    },
                     "labels": {
                         "youtube": "Matt W creates things",
                         "github": "https://github.com/matt88wong",

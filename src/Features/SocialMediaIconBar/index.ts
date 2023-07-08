@@ -1,0 +1,1 @@
+export { SocialMediaIconBar } from './SocialMediaIconBar';

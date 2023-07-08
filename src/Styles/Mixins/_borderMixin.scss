@@ -5,3 +5,8 @@
     border: $border-thickness-thicc solid $fresh;
     border-radius: $border-radius-regular;
 };
+
+@mixin circular-border {
+    border: $border-thickness-regular solid $white;
+    border-radius: $border-radius-regular;
+}

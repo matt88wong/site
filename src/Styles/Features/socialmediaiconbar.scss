@@ -1,0 +1,8 @@
+@use '../Base' as *;
+
+.socialmediaiconbar-container {
+    display: inline-flex;
+    flex-direction: row;
+    gap: $gap-medium;
+    margin: $space-medium-small $space-medium 0 0;
+}

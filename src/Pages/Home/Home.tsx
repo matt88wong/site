@@ -1,11 +1,12 @@
+//Content
+import TextResources from '../../Content/TextResources.json';
+
 //Dependency components
 import { Fade, Slide } from 'react-awesome-reveal';
 
 //Features
 import { DownloadCvButton } from '../../Features';
-
-//Content
-import TextResources from '../../Content/TextResources.json';
+import { SocialMediaIconBar } from '../../Features';
 
 //Style
 import '../../css/Pages/home.css';
@@ -21,29 +22,29 @@ export const Home = () => {
             <div className="home-leftside-container">
                 <Fade duration={FADEDURATION} direction='down'>
                     <p>
-                        {TextResources.pageContent.home.intro.title}
+                        {TextResources.pageContent.home.leftHandSide.intro.title}
                     </p>
                 </Fade>
                 <Slide duration={SLIDEDURATION} direction='left'>
                     <h1>
-                        {TextResources.pageContent.home.intro.nameHeader}
-                        <span className="intro-name">{TextResources.pageContent.home.intro.name}</span>
+                        {TextResources.pageContent.home.leftHandSide.intro.nameHeader}
+                        <span className="intro-name">{TextResources.pageContent.home.leftHandSide.intro.name}</span>
                     </h1>
                 </Slide>
                 <Slide duration={SLIDEDURATION} direction='right'>
                     <h1>
-                        {TextResources.pageContent.home.intro.whatIdoHeader}
+                        {TextResources.pageContent.home.leftHandSide.intro.whatIdoHeader}
                     </h1>
                 </Slide>
                 <Fade duration={FADEDURATION} direction='up'>
                     <p>
-                        {TextResources.pageContent.home.intro.statement}
+                        {TextResources.pageContent.home.leftHandSide.intro.statement}
                     </p>
                 </Fade>
                 <Fade duration={FADEDURATION} direction='left'>
-                    <DownloadCvButton/>
+                    <DownloadCvButton />
                 </Fade>
-                *put the social links down belowwww*
+                <SocialMediaIconBar />
             </div>
             <div className="home-rightside-container">
                 <div>add photo and content foooo schtuff idk</div>
