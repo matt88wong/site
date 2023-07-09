@@ -1,7 +1,7 @@
 @use '../Base' as *;
 
 //Fade border
-@mixin fade-border{
+@mixin fade-border-left{
     border: $border-thickness-thicc solid $fresh;
     border-radius: $border-radius-regular;
 };

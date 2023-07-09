@@ -32,4 +32,8 @@
 
 .navbar-link:last-child {
     margin-right: $space-medium;
+    
+    @media (min-width: $media-query-large) {
+        margin-right: $space-large;
+    }
 }

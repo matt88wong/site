@@ -8256,3 +8256,8 @@ readers do not read off random characters that represent icons */
 .navbar-link:last-child {
   margin-right: 3rem;
 }
+@media (min-width: 1536px) {
+  .navbar-link:last-child {
+    margin-right: 6rem;
+  }
+}

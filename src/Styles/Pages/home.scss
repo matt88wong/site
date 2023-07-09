@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     font-weight: $font-weight-medium;
-    line-height: $line-height-large;
+    line-height: $line-height-medium-large;
 
     h1 {
         @include header-text;
@@ -19,8 +19,7 @@
 }
 
 .home-leftside-container {
-    @include fade-border;
-    margin: 0 $space-small 0 $space-medium;
+    margin: 0 $space-small 0 $space-small;
     padding: $space-medium-small;
 
     @media (min-width: $media-query-large) {
@@ -42,6 +41,13 @@
     }
 }
 
-.intro-name {
+.name-highlight {
     color: $fresh;
+    font-weight: $font-weight-semi-bold;
+}
+
+.hidden-korok {
+    color: brown;
+    cursor: url(../../Content/images/flying-korok.png), pointer;
+    font-weight: $font-weight-semi-bold;
 }

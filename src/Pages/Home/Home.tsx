@@ -28,7 +28,7 @@ export const Home = () => {
                 <Slide duration={SLIDEDURATION} direction='left'>
                     <h1>
                         {TextResources.pageContent.home.leftHandSide.intro.nameHeader}
-                        <span className="intro-name">{TextResources.pageContent.home.leftHandSide.intro.name}</span>
+                        <span className='name-highlight'>{TextResources.pageContent.home.leftHandSide.intro.name}</span>
                     </h1>
                 </Slide>
                 <Slide duration={SLIDEDURATION} direction='right'>
@@ -38,9 +38,16 @@ export const Home = () => {
                 </Slide>
                 <Fade duration={FADEDURATION} direction='up'>
                     <p>
-                        {TextResources.pageContent.home.leftHandSide.intro.statement}
+                        {TextResources.pageContent.home.leftHandSide.intro.careerStatement}
                     </p>
                 </Fade>
+                <p>
+                    {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine1}
+                    <a className='hidden-korok' rel='noreferrer' href={TextResources.pageContent.home.leftHandSide.intro.korokTreat} target='_blank'>
+                        {TextResources.pageContent.home.leftHandSide.intro.koroks}
+                    </a>
+                    {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine2}
+                </p>
                 <Fade duration={FADEDURATION} direction='left'>
                     <DownloadCvButton />
                 </Fade>

@@ -51,8 +51,12 @@
                     "title": "Hello, welcome.",
                     "name": "Matthew Wong.",
                     "nameHeader": "My name is ",
-                    "whatIdoHeader": "I create stuff for the web.",
-                    "statement": "I'm a full stack software developer based in Auckland, NZ."
+                    "whatIdoHeader": "I like creating stuff for the web.",
+                    "careerStatement": "I'm a full stack software developer based in central Auckland, New Zealand.",
+                    "koroks": "Koroks",
+                    "korokTreat": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/53/BotW_Korok_Seed_Icon.png/revision/latest?cb=20181117133503&format=original",
+                    "outsideOfDevelopmentLine1": "Outside of making stuff for the web, I like exploring the outdoors, noodling tunes on my guitar and helping ",
+                    "outsideOfDevelopmentLine2": " reunite with their little pals in Hyrule Kingdom."
                 },
                 "socialMediaIcons": {
                     "iconName": {

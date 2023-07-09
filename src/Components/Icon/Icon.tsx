@@ -48,7 +48,7 @@ export const Icon = (props: IconProps) => {
 
     return (
         <div className='icon-container'>
-            <a href={url} target='_blank'>
+            <a href={url} target='_blank' rel='noreferrer'>
                 <img src={getIcon()} alt={label} width={getIconSize()}/>
             </a>
         </div>
