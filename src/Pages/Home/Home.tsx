@@ -39,15 +39,14 @@ export const Home = () => {
                 <Fade duration={FADEDURATION} direction='up'>
                     <p>
                         {TextResources.pageContent.home.leftHandSide.intro.careerStatement}
+                        <br/>
+                        {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine1}
+                        <a className='hidden-korok' rel='noreferrer' href={TextResources.pageContent.home.leftHandSide.intro.korokTreat} target='_blank'>
+                            {TextResources.pageContent.home.leftHandSide.intro.koroks}
+                        </a>
+                        {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine2}
                     </p>
                 </Fade>
-                <p>
-                    {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine1}
-                    <a className='hidden-korok' rel='noreferrer' href={TextResources.pageContent.home.leftHandSide.intro.korokTreat} target='_blank'>
-                        {TextResources.pageContent.home.leftHandSide.intro.koroks}
-                    </a>
-                    {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine2}
-                </p>
                 <Fade duration={FADEDURATION} direction='left'>
                     <DownloadCvButton />
                 </Fade>
