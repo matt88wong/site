@@ -1,0 +1,18 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+.skillscontent-container {
+    background-color: darkgoldenrod;
+
+    display: inline-flex;
+
+
+    
+    margin: 0 $space-small;
+    padding: $space-medium-small;
+
+    @media (min-width: $media-query-large) {
+        margin: $space-large $space-medium;
+        padding: $space-medium-large $space-medium;
+    }
+}

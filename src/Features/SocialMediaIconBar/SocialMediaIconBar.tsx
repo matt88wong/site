@@ -12,21 +12,21 @@ export const SocialMediaIconBar = () => {
     return (
         <div className='socialmediaiconbar-container'>
             <Icon 
-                iconName={TextResources.pageContent.home.leftHandSide.socialMediaIcons.iconName.linkedin}
-                label={TextResources.pageContent.home.leftHandSide.socialMediaIcons.labels.linkedin} 
-                url={TextResources.pageContent.home.leftHandSide.socialMediaIcons.links.linkedin} />
-            <Icon
-                iconName={TextResources.pageContent.home.leftHandSide.socialMediaIcons.iconName.github}
-                label={TextResources.pageContent.home.leftHandSide.socialMediaIcons.labels.github}  
-                url={TextResources.pageContent.home.leftHandSide.socialMediaIcons.links.github} />
-            <Icon
-                iconName={TextResources.pageContent.home.leftHandSide.socialMediaIcons.iconName.instagram}
-                label={TextResources.pageContent.home.leftHandSide.socialMediaIcons.labels.instagram} 
-                url={TextResources.pageContent.home.leftHandSide.socialMediaIcons.links.instagram} />
+                iconName={TextResources.icons.socialMedia.linkedin.iconName}
+                label={TextResources.icons.socialMedia.linkedin.labels} 
+                url={TextResources.icons.socialMedia.linkedin.url} />
             <Icon 
-                iconName={TextResources.pageContent.home.leftHandSide.socialMediaIcons.iconName.youtube}
-                label={TextResources.pageContent.home.leftHandSide.socialMediaIcons.labels.youtube} 
-                url={TextResources.pageContent.home.leftHandSide.socialMediaIcons.links.youtube} />
+                iconName={TextResources.icons.socialMedia.github.iconName}
+                label={TextResources.icons.socialMedia.github.labels} 
+                url={TextResources.icons.socialMedia.github.url} />
+            <Icon 
+                iconName={TextResources.icons.socialMedia.instagram.iconName}
+                label={TextResources.icons.socialMedia.instagram.labels} 
+                url={TextResources.icons.socialMedia.instagram.url} />
+            <Icon 
+                iconName={TextResources.icons.socialMedia.youtube.iconName}
+                label={TextResources.icons.socialMedia.youtube.labels} 
+                url={TextResources.icons.socialMedia.youtube.url} />
         </div>
     );
 };

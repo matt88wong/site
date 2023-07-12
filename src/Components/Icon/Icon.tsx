@@ -1,8 +1,5 @@
-//Icon content
-import github_logo from '../../Content/icons/github_logo.svg';
-import linkedin_logo from '../../Content/icons/linkedin_logo.svg';
-import youtube_logo from '../../Content/icons/youtube_logo.svg';
-import instagram_logo from '../../Content/icons/instagram_logo.svg';
+//Dependencies
+import { GetIcon } from './GetIcon';
 
 //Style
 import '../../css/Components/icon.css';
@@ -11,7 +8,7 @@ import '../../css/Components/icon.css';
 import { IconProps } from '../../Types/Components/Icon';
 
 export const Icon = (props: IconProps) => {
-    const { iconName, label, size, url } = props;
+    const { iconName, includeLabelText, label, size, url } = props;
 
     const getIconSize = () => {
         switch(size) {
@@ -29,28 +26,12 @@ export const Icon = (props: IconProps) => {
         };
     }
 
-    const getIcon = () => {
-        switch(iconName) {
-            case 'github_logo': {
-                return github_logo;
-            }
-            case 'linkedin_logo': {
-                return linkedin_logo;
-            }
-            case 'youtube_logo': {
-                return youtube_logo;
-            }
-            case 'instagram_logo': {
-                return instagram_logo;
-            }
-        };
-    }
-
     return (
         <div className='icon-container'>
             <a href={url} target='_blank' rel='noreferrer'>
-                <img src={getIcon()} alt={label} width={getIconSize()}/>
+                <img src={GetIcon(iconName)} alt={label} width={getIconSize()}/>
             </a>
+            {includeLabelText && <span>{label}</span>}
         </div>
     );
 

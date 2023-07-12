@@ -6,6 +6,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 
 //Features
 import { DownloadCvButton } from '../../Features';
+import { SkillsContent } from '../../Features';
 import { SocialMediaIconBar } from '../../Features';
 
 //Style
@@ -53,8 +54,7 @@ export const Home = () => {
                 <SocialMediaIconBar />
             </div>
             <div className="home-rightside-container">
-                <div>add photo and content foooo schtuff idk</div>
-                <div>skilllzzzzzz with like slideshow carousel and all the logoszzz</div>
+                <SkillsContent skillArea='languages' />
             </div>
         </div>
     );

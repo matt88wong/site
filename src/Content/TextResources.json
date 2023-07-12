@@ -57,30 +57,93 @@
                     "korokTreat": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/53/BotW_Korok_Seed_Icon.png/revision/latest?cb=20181117133503&format=original",
                     "outsideOfDevelopmentLine1": "Outside of making stuff for the web, I like exploring the outdoors, noodling tunes on my guitar and helping ",
                     "outsideOfDevelopmentLine2": " reunite with their little pals in Hyrule."
-                },
-                "socialMediaIcons": {
-                    "iconName": {
-                        "linkedin": "linkedin_logo",
-                        "youtube": "youtube_logo",
-                        "instagram": "instagram_logo",
-                        "github": "github_logo"
-                    },
-                    "labels": {
-                        "youtube": "Matt W creates things",
-                        "github": "https://github.com/matt88wong",
-                        "linkedin": "https://www.linkedin.com/in/mwong-developer",
-                        "instagram": "allmattzaremadeup"
-                    },
-                    "links": {
-                        "youtube": "https://www.youtube.com/@Matt_W_Creates_Things",
-                        "github": "https://github.com/matt88wong",
-                        "linkedin": "https://www.linkedin.com/in/mwong-developer",
-                        "instagram": "https://www.instagram.com/allmattzaremadeup/"
-                    }
                 }
             },
             "rightHandSide": {
 
+            }
+        }
+    },
+    "icons": {
+        "socialMedia": {
+            "linkedin": {
+                "iconName": "linkedin_logo",
+                "labels": "https://www.linkedin.com/in/mwong-developer",
+                "url": "https://www.linkedin.com/in/mwong-developer"
+            },
+            "instagram": {
+                "iconName": "instagram_logo",
+                "labels": "allmattzaremadeup",
+                "url": "https://www.instagram.com/allmattzaremadeup/"
+            },
+            "github": {
+                "iconName": "github_logo",
+                "labels": "https://github.com/matt88wong",
+                "url": "https://github.com/matt88wong"
+            },
+            "youtube": {
+                "iconName": "youtube_logo",
+                "labels": "Matt W creates things",
+                "url": "https://www.youtube.com/@Matt_W_Creates_Things"
+            }
+        },
+        "skills": {
+            "languages": {
+                "csharp": {
+                    "iconName": "c_sharp_logo",
+                    "label": "C#"
+                },
+                "css": {
+                    "iconName": "css_logo",
+                    "label": "CSS"
+                },
+                "html": {
+                    "iconName": "html_logo",
+                    "label": "HTML"
+                },
+                "javascript": {
+                    "iconName": "javascript_logo",
+                    "label": "Javascript"
+                },
+                "python": {
+                    "iconName": "python_logo",
+                    "label": "Python"
+                },
+                "typescript": {
+                    "iconName": "typescript_logo",
+                    "label": "Typescript"
+                }
+            },
+            "frameworks": {
+                "dotnet": {
+                    "iconName": "dotnet_logo",
+                    "label": ".NET"
+                },
+                "jest": {
+                    "iconName": "jest_logo",
+                    "label": "Jest"
+                },
+                "react": {
+                    "iconName": "react_logo",
+                    "label": "React"
+                },
+                "sass": {
+                    "iconName": "sass_logo",
+                    "label": "Sass"
+                },
+                "vue": {
+                    "iconName": "vue_logo",
+                    "label": "Vue"
+                }
+            },
+            "teamwork": {
+
+            },
+            "tools": {
+                "git": {
+                    "iconName": "git_logo",
+                    "label:": "GIT"
+                }
             }
         }
     }
