@@ -8220,14 +8220,19 @@ readers do not read off random characters that represent icons */
 }
 
 .skillscontent-container {
-  background-color: darkgoldenrod;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.skillscontent-icons {
   display: inline-flex;
-  margin: 0 1rem;
-  padding: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4.5rem;
 }
 @media (min-width: 1536px) {
-  .skillscontent-container {
-    margin: 6rem 3rem;
-    padding: 4.5rem 3rem;
+  .skillscontent-icons {
+    column-gap: 3rem;
   }
 }

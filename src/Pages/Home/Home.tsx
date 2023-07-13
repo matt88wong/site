@@ -20,7 +20,7 @@ export const Home = () => {
 
     return (
         <div className="home-container">
-            <div className="home-leftside-container">
+            <div className="home-leftside-column">
                 <Fade duration={FADEDURATION} direction='down'>
                     <p>
                         {TextResources.pageContent.home.leftHandSide.intro.title}
@@ -53,7 +53,7 @@ export const Home = () => {
                 </Fade>
                 <SocialMediaIconBar />
             </div>
-            <div className="home-rightside-container">
+            <div className="home-rightside-column">
                 <SkillsContent skillArea='languages' />
             </div>
         </div>

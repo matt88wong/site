@@ -5,6 +5,7 @@ import youtube_logo from '../../Content/icons/youtube_logo.svg';
 import instagram_logo from '../../Content/icons/instagram_logo.svg';
 
 //Skills icon content
+// import agile_logo from '../../Content/icons/agile_logo.svg';
 import c_sharp_logo from '../../Content/icons/c_sharp_logo.svg';
 import css_logo from '../../Content/icons/css_logo.svg';
 import dotnet_logo from '../../Content/icons/dotnet_logo.svg';
@@ -15,6 +16,7 @@ import jest_logo from '../../Content/icons/jest_logo.svg';
 import python_logo from '../../Content/icons/python_logo.svg';
 import react_logo from '../../Content/icons/react_logo.svg';
 import sass_logo from '../../Content/icons/sass_logo.svg';
+import sql_logo from '../../Content/icons/sql_logo.svg';
 import typescript_logo from '../../Content/icons/typescript_logo.svg';
 import vue_logo from '../../Content/icons/vue_logo.svg';
 
@@ -67,6 +69,12 @@ export const GetIcon = (iconName: string) => {
         }
         case 'vue_logo': {
             return vue_logo;
+        }
+        // case 'agile_logo': {
+        //     return agile_logo;
+        // }
+        case 'sql_logo': {
+            return sql_logo;
         }
     };
 }

@@ -2,17 +2,19 @@
 @use '../Mixins/' as *;
 
 .skillscontent-container {
-    background-color: darkgoldenrod;
+    margin-top: $space-medium;
+    text-align: center;
+}
 
+.skillscontent-icons {
     display: inline-flex;
-
-
-    
-    margin: 0 $space-small;
-    padding: $space-medium-small;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: $space-medium-large;
 
     @media (min-width: $media-query-large) {
-        margin: $space-large $space-medium;
-        padding: $space-medium-large $space-medium;
+        column-gap: $space-medium;
     }
 }
+

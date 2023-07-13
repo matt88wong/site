@@ -8220,8 +8220,21 @@ readers do not read off random characters that represent icons */
 }
 
 .icon-container {
+  display: inline-flex;
+  flex-direction: column;
   margin-top: 1rem;
 }
-.icon-container img:hover {
+
+.icon-hover img:hover {
   transform: translateY(-0.5rem);
+}
+
+.icon-image {
+  align-self: center;
+}
+
+.icon-label-text {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }

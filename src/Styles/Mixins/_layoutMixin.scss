@@ -1,0 +1,9 @@
+@use '../Base' as *;
+
+//Flex column mixin
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}

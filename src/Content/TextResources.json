@@ -52,15 +52,21 @@
                     "name": "Matthew Wong.",
                     "nameHeader": "My name is ",
                     "whatIdoHeader": "I like creating stuff for the web.",
-                    "careerStatement": "I'm a full stack software developer based in central Auckland, New Zealand.",
+                    "careerStatement": "I'm a full stack software developer based in central Auckland.",
                     "koroks": "Koroks",
                     "korokTreat": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/53/BotW_Korok_Seed_Icon.png/revision/latest?cb=20181117133503&format=original",
-                    "outsideOfDevelopmentLine1": "Outside of making stuff for the web, I like exploring the outdoors, noodling tunes on my guitar and helping ",
+                    "outsideOfDevelopmentLine1": "Outside of making stuff for the web, I like exploring the outdoors, noodling tunes on my guitar, and helping ",
                     "outsideOfDevelopmentLine2": " reunite with their little pals in Hyrule."
                 }
             },
             "rightHandSide": {
-
+                "skills": {
+                    "headerText": {
+                        "languages": "Languages that I create with",
+                        "frameworks": "Frameworks that I create with",
+                        "tools": "Tools that I create with"
+                    }
+                }
             }
         }
     },
@@ -109,6 +115,10 @@
                     "iconName": "python_logo",
                     "label": "Python"
                 },
+                "sql": {
+                    "iconName": "sql_logo",
+                    "label": "SQL"
+                },
                 "typescript": {
                     "iconName": "typescript_logo",
                     "label": "Typescript"
@@ -137,7 +147,10 @@
                 }
             },
             "teamwork": {
-
+                "agile": {
+                    "iconName": "agile_logo",
+                    "label": "Agile"
+                }
             },
             "tools": {
                 "git": {

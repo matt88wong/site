@@ -5,11 +5,15 @@
     @include regular-text;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
     font-weight: $font-weight-medium;
     line-height: $line-height-medium-large;
 
     h1 {
         @include header-text;
+        line-height: 0;
     }
     
     @media (min-width: $media-query-large) {
@@ -18,26 +22,24 @@
     }
 }
 
-.home-leftside-container {
-    margin: 0 $space-small;
-    padding: $space-medium-small;
+.home-leftside-column {
+    @include flex-column;
+    margin: $space-small 0 $space-small $space-medium;
 
     @media (min-width: $media-query-large) {
         margin: $space-large $space-medium;
-        padding: $space-medium-large $space-medium;
     }
 }
 
-.home-rightside-container {
+.home-rightside-column {
     //TODO: CHANGE THIS WHEN WORKING ON RIGHTSIDE CONTENT
     border: $border-thickness-thicc dotted $fresh;
     border-radius: $border-radius-regular;
-    margin: $space-small $space-medium;
-    padding: $space-medium-small;
+    @include flex-column;
+    margin: $space-small $space-small $space-small 0;
 
     @media (min-width: $media-query-large) {
-        margin: $space-large;
-        padding: $space-medium-large $space-medium;
+        margin: $space-large $space-medium;
     }
 }
 

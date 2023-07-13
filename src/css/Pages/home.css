@@ -8224,6 +8224,8 @@ readers do not read off random characters that represent icons */
   font-size: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   font-weight: 500;
   line-height: 1.5rem;
 }
@@ -8235,6 +8237,7 @@ readers do not read off random characters that represent icons */
 .home-container h1 {
   font-family: "Roboto";
   font-size: 36px;
+  line-height: 0;
 }
 @media (min-width: 1536px) {
   .home-container h1 {
@@ -8248,27 +8251,31 @@ readers do not read off random characters that represent icons */
   }
 }
 
-.home-leftside-container {
-  margin: 0 1rem;
-  padding: 2rem;
+.home-leftside-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 1rem 0 1rem 3rem;
 }
 @media (min-width: 1536px) {
-  .home-leftside-container {
+  .home-leftside-column {
     margin: 6rem 3rem;
-    padding: 4.5rem 3rem;
   }
 }
 
-.home-rightside-container {
+.home-rightside-column {
   border: 12px dotted #4ABDAC;
   border-radius: 24px;
-  margin: 1rem 3rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 1rem 1rem 1rem 0;
 }
 @media (min-width: 1536px) {
-  .home-rightside-container {
-    margin: 6rem;
-    padding: 4.5rem 3rem;
+  .home-rightside-column {
+    margin: 6rem 3rem;
   }
 }
 

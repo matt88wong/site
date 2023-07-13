@@ -2,9 +2,23 @@
 @use '../Mixins/' as *;
 
 .icon-container {
+    display: inline-flex;
+    flex-direction: column;
     margin-top: $space-small;
+}
 
+.icon-hover {
     img:hover {
         transform: translateY(-0.5rem);
     }
+}
+
+.icon-image {
+    align-self: center;
+}
+
+.icon-label-text {
+    font-size: $font-size-extra-small-text;
+    font-weight: $font-weight-semi-bold;
+    text-align: center;
 }

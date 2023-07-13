@@ -26,12 +26,21 @@ export const Icon = (props: IconProps) => {
         };
     }
 
+    if (url) {
+        return (
+            <div className='icon-hover icon-container'>
+                <a href={url} target='_blank' rel='noreferrer'>
+                    <img className='icon-image' src={GetIcon(iconName)} alt={label} height={getIconSize()} width={getIconSize()}/>
+                    {includeLabelText && <span className='icon-label-text'>{label}</span>}
+                </a>
+            </div>
+        );
+    }
+
     return (
         <div className='icon-container'>
-            <a href={url} target='_blank' rel='noreferrer'>
-                <img src={GetIcon(iconName)} alt={label} width={getIconSize()}/>
-            </a>
-            {includeLabelText && <span>{label}</span>}
+            <img className='icon-image' src={GetIcon(iconName)} alt={label} height={getIconSize()} width={getIconSize()}/>
+            {includeLabelText && <span className='icon-label-text'>{label}</span>}
         </div>
     );
 
