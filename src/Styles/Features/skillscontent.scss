@@ -4,6 +4,10 @@
 .skillscontent-container {
     margin-top: $space-small;
     text-align: center;
+
+    @media (min-width: $media-query-large) {
+        margin-top: $space-medium;
+    }
 }
 
 .skillscontent-icons {

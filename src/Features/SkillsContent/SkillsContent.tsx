@@ -7,14 +7,10 @@ import { GetSkillsIcons } from './GetSkillsIcons';
 //Style
 import '../../css/Features/skillscontent.css';
 
-//Types
-import { SkillsContentProps } from "../../Types/Features/SkillsContent";
+export const SkillsContent = () => {
+    let skillArea = 'languages';
 
-//OBJECTIVE: Skills content showing thing use a prop to return the appropriate content 
-export const SkillsContent = (props: SkillsContentProps) => {
-    const { skillArea } = props;
-
-    const skillIcons = GetSkillsIcons("teamwork");
+    const skillIcons = GetSkillsIcons('languages');
 
     const getSkillsHeaderText = () => {
         switch(skillArea) {

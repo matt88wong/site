@@ -75,7 +75,7 @@ export const Home = () => {
             </div>
             <div className="home-rightside-column">
                 <Avatar />
-                <SkillsContent skillArea='languages' />
+                <SkillsContent />
             </div>
         </div>
     );

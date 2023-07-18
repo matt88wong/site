@@ -8223,6 +8223,11 @@ readers do not read off random characters that represent icons */
   margin-top: 1rem;
   text-align: center;
 }
+@media (min-width: 1536px) {
+  .skillscontent-container {
+    margin-top: 3rem;
+  }
+}
 
 .skillscontent-icons {
   display: inline-flex;
