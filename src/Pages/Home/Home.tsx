@@ -22,7 +22,7 @@ export const Home = () => {
     const SLIDEDURATION = 1000;
 
     const CoolStuffButton = () => {
-        return (<Button href={CV} label={TextResources.buttons.coolStuff.label} target='_blank' type='slide' />);
+        return (<Button href={TextResources.pageLinks.coolStuff.pageLink} label={TextResources.buttons.coolStuff.label} type='slide' />);
     };
 
     const DownloadCvButton = () => {
@@ -30,7 +30,7 @@ export const Home = () => {
     };
 
     const PortfolioButton = () => {
-        return (<Button href={CV} label={TextResources.buttons.portfolio.label} target='_blank' type='fill' />);
+        return (<Button href={TextResources.pageLinks.portfolio.pageLink} label={TextResources.buttons.portfolio.label} type='fill' />);
     };
 
     return (

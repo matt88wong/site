@@ -1,3 +1,6 @@
+//Content
+import TextResources from './Content/TextResources.json';
+
 //Dependencies
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
@@ -17,8 +20,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="portfolio" element={<div>create portfolio page!</div>} />
-          <Route path="coolstuff" element={<CoolStuff />} />
+          <Route path={TextResources.pageLinks.portfolio.pageLink} element={<div>create portfolio page!</div>} />
+          <Route path={TextResources.pageLinks.coolStuff.pageLink} element={<CoolStuff />} />
         </Routes>
         <Outlet />    
       </BrowserRouter>
