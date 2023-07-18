@@ -1,0 +1,25 @@
+@use '../Base' as *;
+
+.avatar-background {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.avatar-background-circle {
+    background-color: $fresh;
+    height: 192px;
+    width: 252px;
+    border-radius: 50%;
+
+    @media (min-width: $media-query-large) {
+        background-color: brown;
+    }
+}
+
+.avatar-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}

@@ -9,6 +9,7 @@ import TextResources from '../../Content/TextResources.json';
 import { Fade, Slide } from 'react-awesome-reveal';
 
 //Features
+import { Avatar } from '../../Features';
 import { SkillsContent } from '../../Features';
 import { SocialMediaIconBar } from '../../Features';
 
@@ -73,6 +74,7 @@ export const Home = () => {
                 <SocialMediaIconBar />
             </div>
             <div className="home-rightside-column">
+                <Avatar />
                 <SkillsContent skillArea='languages' />
             </div>
         </div>

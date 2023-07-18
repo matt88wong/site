@@ -8219,85 +8219,27 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.home-container {
-  font-family: "Roboto";
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  font-weight: 500;
-  line-height: 1.5rem;
-}
-@media (min-width: 1536px) {
-  .home-container {
-    font-size: 24px;
-  }
-}
-.home-container h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-  line-height: 0;
-}
-@media (min-width: 1536px) {
-  .home-container h1 {
-    font-size: 48px;
-  }
-}
-@media (min-width: 1536px) {
-  .home-container {
-    font-weight: 500;
-    line-height: 2rem;
-  }
-}
-
-.home-leftside-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 1rem 0 1rem 3rem;
-}
-@media (min-width: 1536px) {
-  .home-leftside-column {
-    margin: 6rem 3rem;
-  }
-}
-
-.home-leftside-buttons {
+.avatar-background {
   display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: left;
-  column-gap: 1rem;
+  justify-content: center;
+}
+
+.avatar-background-circle {
+  background-color: #4ABDAC;
+  height: 192px;
+  width: 252px;
+  border-radius: 50%;
 }
 @media (min-width: 1536px) {
-  .home-leftside-buttons {
-    column-gap: 3rem;
+  .avatar-background-circle {
+    background-color: brown;
   }
 }
 
-.home-rightside-column {
+.avatar-image {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 1rem 1rem 1rem 0;
-}
-@media (min-width: 1536px) {
-  .home-rightside-column {
-    margin: 6rem 3rem;
-  }
-}
-
-.name-highlight {
-  color: #4ABDAC;
-  font-weight: 600;
-}
-
-.hidden-korok {
-  color: brown;
-  cursor: url(../../Content/images/flying-korok.png), pointer;
-  font-weight: 600;
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
 }

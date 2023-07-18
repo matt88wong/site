@@ -44,9 +44,6 @@
 }
 
 .home-rightside-column {
-    //TODO: CHANGE THIS WHEN WORKING ON RIGHTSIDE CONTENT
-    border: $border-thickness-thicc dotted $fresh;
-    border-radius: $border-radius-regular;
     @include flex-column;
     margin: $space-small $space-small $space-small 0;
 
