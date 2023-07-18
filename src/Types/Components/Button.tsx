@@ -4,6 +4,6 @@ export interface ButtonProps {
     iconLink?: string;
     size?: string;
     target?: '_blank';
-    type?: 'regular' | 'offset' | 'raise';
+    type?: 'regular' | 'offset' | 'fill' | 'slide';
     href?: string;
 }

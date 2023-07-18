@@ -70,6 +70,17 @@
             }
         }
     },
+    "buttons": {
+        "coolStuff": {
+            "label": "Cool stuff"
+        },
+        "cv": {
+            "label": "View my CV"
+        },
+        "portfolio": {
+            "label": "My Portfolio"
+        }
+    },
     "icons": {
         "socialMedia": {
             "linkedin": {

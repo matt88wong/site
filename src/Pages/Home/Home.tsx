@@ -1,11 +1,14 @@
+//Components
+import { Button } from '../../Components';
+
 //Content
+import CV from '../../Content/documents/CV.pdf';
 import TextResources from '../../Content/TextResources.json';
 
 //Dependency components
 import { Fade, Slide } from 'react-awesome-reveal';
 
 //Features
-import { DownloadCvButton } from '../../Features';
 import { SkillsContent } from '../../Features';
 import { SocialMediaIconBar } from '../../Features';
 
@@ -17,6 +20,18 @@ export const Home = () => {
     //TODO: Constants folder
     const FADEDURATION = 1500;
     const SLIDEDURATION = 1000;
+
+    const CoolStuffButton = () => {
+        return (<Button href={CV} label={TextResources.buttons.coolStuff.label} target='_blank' type='slide' />);
+    };
+
+    const DownloadCvButton = () => {
+        return (<Button href={CV} label={TextResources.buttons.cv.label} target='_blank' type='offset' />);
+    };
+
+    const PortfolioButton = () => {
+        return (<Button href={CV} label={TextResources.buttons.portfolio.label} target='_blank' type='fill' />);
+    };
 
     return (
         <div className="home-container">
@@ -49,7 +64,11 @@ export const Home = () => {
                     </p>
                 </Fade>
                 <Fade duration={FADEDURATION} direction='left'>
-                    <DownloadCvButton />
+                    <div className='home-leftside-buttons'>
+                        {DownloadCvButton()}
+                        {PortfolioButton()}
+                        {CoolStuffButton()}
+                    </div>
                 </Fade>
                 <SocialMediaIconBar />
             </div>

@@ -13,10 +13,6 @@
     margin-left: $space-medium;
     margin-right: auto;
     cursor: pointer;
-
-    @media (min-width: $media-query-large) {
-        margin-left: $space-large;
-    }
 }
 
 .navbar-link {

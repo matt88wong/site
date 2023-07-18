@@ -1,24 +1,41 @@
 @use '../Base' as *;
 
 //Offset button
-@mixin offset-button{
+@mixin offset-button($box-shadow-x-length, $box-shadow-y-length, $color, $transition-period) {
     box-shadow: 
-        $box-shadow-space $box-shadow-space 0 0 $fresh,
-        inset $box-shadow-space $box-shadow-space 0 0 $fresh;
-
+        $box-shadow-x-length $box-shadow-y-length 0 0 $color,
+        inset $box-shadow-x-length $box-shadow-y-length 0 0 $color;
+    transition: $transition-period;
+    
     &:hover {
         //making top part of box-shadow cover button
         box-shadow: 
-            0 0 0 0 $fresh,
-            inset 6rem 4.5rem 0 0 adjust-hue($fresh, -16deg);
+            0 0 0 0 $color,
+            inset 6rem 4.5rem 0 0 $color;
     }
 };
 
-//Raise button
-@mixin raise-button{
+//Fill button
+@mixin fill-button($box-shadow-blur, $box-shadow-spread, $transition-period, $color) {
+    border: $border-thickness-regular solid $color;
+
+    -webkit-transition: box-shadow $transition-period ease-in-out, 
+                        color $transition-period ease-in-out;
+    transition: box-shadow $transition-period ease-in-out, 
+                        color $transition-period ease-in-out;
+
     &:hover {
-        box-shadow: 0 0.5rem 0.5rem 0 yellow;
-        transform: translateY(-0.25rm)
+        box-shadow: 0 0 $box-shadow-blur $box-shadow-spread $color inset;
+        color: $white;
     }
-};
+}
 
+//Slide button
+@mixin slide-button($box-shadow-x-length, $color, $transition-period) {
+    border: $border-thickness-regular solid $color;
+
+    transition: $transition-period;
+    &:hover {
+        box-shadow: inset $box-shadow-x-length 0 0 0 $color;
+    }
+}

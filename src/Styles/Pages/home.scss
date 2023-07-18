@@ -31,6 +31,18 @@
     }
 }
 
+.home-leftside-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: $space-small;
+
+    @media (min-width: $media-query-large) {
+        column-gap: $space-medium;
+    }
+}
+
 .home-rightside-column {
     //TODO: CHANGE THIS WHEN WORKING ON RIGHTSIDE CONTENT
     border: $border-thickness-thicc dotted $fresh;
@@ -52,4 +64,5 @@
     color: brown;
     cursor: url(../../Content/images/flying-korok.png), pointer;
     font-weight: $font-weight-semi-bold;
+    text-decoration: none;
 }

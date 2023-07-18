@@ -8219,39 +8219,56 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-a {
+.button-container {
   font-family: "Roboto";
   font-size: 20px;
   background-color: #FFFFFF;
   color: inherit;
   cursor: pointer;
-  display: inline-block;
-  text-align: center;
   text-decoration: none;
-  transition: 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
 
 .button-size-large {
-  padding: 2rem 3rem;
+  height: 72px;
+  width: 192px;
 }
 
 .button-size-medium {
-  padding: 1rem 2rem;
+  height: 48px;
+  width: 144px;
 }
 
 .button-size-small {
-  padding: 0.5rem 1rem;
+  height: 24px;
+  width: 72px;
 }
 
 .button-offset {
   box-shadow: 0.3rem 0.3rem 0 0 #4ABDAC, inset 0.3rem 0.3rem 0 0 #4ABDAC;
-  border: none;
+  transition: 600ms;
 }
 .button-offset:hover {
-  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 4.5rem 0 0 #4abd8d;
+  box-shadow: 0 0 0 0 #4ABDAC, inset 6rem 4.5rem 0 0 #4ABDAC;
 }
 
-.button-raise:hover {
-  box-shadow: 0 0.5rem 0.5rem 0 yellow;
-  transform: translateY(-0.25rm);
+.button-fill {
+  border: 2px solid #FF3B3F;
+  -webkit-transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
+  transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
+}
+.button-fill:hover {
+  box-shadow: 0 0 40px 40px #FF3B3F inset;
+  color: #FFFFFF;
+}
+
+.button-slide {
+  border: 2px solid #FFC91A;
+  transition: 600ms;
+}
+.button-slide:hover {
+  box-shadow: inset 10rem 0 0 0 #FFC91A;
 }

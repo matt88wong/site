@@ -32,12 +32,18 @@ export const Button = (props : ButtonProps) => {
             case 'offset': {
                 return 'button-offset';
             }
+            case 'fill': {
+                return 'button-fill';
+            }
+            case 'slide': {
+                return 'button-slide'
+            }
             default: 
                 return 'button-regular';
         };
     }
     return (
-        <a href={href} target={target} className={getButtonSize() + ' ' + getButtonType()} onClick={onClick}>
+        <a href={href} target={target} className={'button-container ' + getButtonSize() + ' ' + getButtonType()} onClick={onClick}>
             <span>{label}</span>
         </a>
     );

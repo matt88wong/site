@@ -8264,6 +8264,19 @@ readers do not read off random characters that represent icons */
   }
 }
 
+.home-leftside-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+  column-gap: 1rem;
+}
+@media (min-width: 1536px) {
+  .home-leftside-buttons {
+    column-gap: 3rem;
+  }
+}
+
 .home-rightside-column {
   border: 12px dotted #4ABDAC;
   border-radius: 24px;
@@ -8288,4 +8301,5 @@ readers do not read off random characters that represent icons */
   color: brown;
   cursor: url(../../Content/images/flying-korok.png), pointer;
   font-weight: 600;
+  text-decoration: none;
 }

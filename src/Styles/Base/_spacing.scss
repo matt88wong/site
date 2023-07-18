@@ -6,12 +6,6 @@ $space-medium: 3rem; // 24px
 $space-medium-large: 4.5rem; //36px;
 $space-large: 6rem; // 48px
 
-//Borders
-$border-thickness-regular: 2px;
-$border-thickness-thicc: 12px;
-$border-radius-regular: 24px;
-$border-radius-large: 48px;
-
 //Line height
 $line-height-small: 0.5rem;
 $line-height-medium: 1rem;
@@ -20,6 +14,9 @@ $line-height-large: 2rem;
 
 //Box shadows
 $box-shadow-space: 0.3rem; //3px
+$box-shadow-space-large: 1rem; //8px
+$box-shadow-blur: 40px;
+$box-shadow-spread: 40px;
 
 //Gap - for flexbox
 $gap-medium: 24px;

@@ -8232,11 +8232,6 @@ readers do not read off random characters that represent icons */
   margin-right: auto;
   cursor: pointer;
 }
-@media (min-width: 1536px) {
-  .navbar-logo-container {
-    margin-left: 6rem;
-  }
-}
 
 .navbar-link {
   font-family: "Roboto";

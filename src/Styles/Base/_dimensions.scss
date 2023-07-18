@@ -2,9 +2,17 @@
 $media-query-large: 1536px;
 
 //Height
-$height-medium: 24px;
-$height-large: 36px;
+$height-small: 24px;
+$height-medium: 48px;
+$height-large: 72px;
 
 //Width
-$width-medium: 24px;
-$width-large: 36px;
+$width-small: 72px;
+$width-medium: 144px;
+$width-large: 192px;
+
+//Borders
+$border-thickness-regular: 2px;
+$border-thickness-thicc: 12px;
+$border-radius-regular: 24px;
+$border-radius-large: 48px;

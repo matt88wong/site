@@ -1,39 +1,45 @@
 @use '../Base' as *;
 @use '../Mixins/' as *;
 
-a {
+.button-container {
     @include button-text;
 
     background-color: $white;
     color: inherit;
     cursor: pointer;
-    display: inline-block;
-    text-align: center;
     text-decoration: none;
-    transition: 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
 .button-size-large {
-    padding: $space-medium-small $space-medium;
+    height: $height-large;
+    width: $width-large;
 }
 
 .button-size-medium {
-    padding: $space-small $space-medium-small;
+    height: $height-medium;
+    width: $width-medium;
 }
 
 .button-size-small {
-    padding: $space-extra-small $space-small;
+    height: $height-small;
+    width: $width-small;
 }
 
 .button-regular {
 }
 
 .button-offset {
-    @include offset-button;
-
-    border: none;
+    @include offset-button($box-shadow-space, $box-shadow-space, $fresh, 600ms);
 }
 
-.button-raise {
-    @include raise-button;
+.button-fill {
+    @include fill-button($box-shadow-blur, $box-shadow-spread, 600ms, $watermelon);
+}
+
+.button-slide {
+    @include slide-button(10rem, $muricanmustard, 600ms);
 }
