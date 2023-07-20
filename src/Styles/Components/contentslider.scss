@@ -1,0 +1,18 @@
+@use '../Base' as *;
+
+.contentSlider-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slide-dots {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 $space-medium-large;
+    column-gap: $space-extra-small;
+}
+
+.contentSlider-navigation-container {
+    display: inline-flex;
+}

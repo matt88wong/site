@@ -1,3 +1,8 @@
+//Content slider icons
+import arrow_left from '../../Content/icons/arrow_left.svg';
+import arrow_right from '../../Content/icons/arrow_right.svg';
+import circle from '../../Content/icons/circle.svg';
+
 //Social media icon content
 import github_logo from '../../Content/icons/github_logo.svg';
 import linkedin_logo from '../../Content/icons/linkedin_logo.svg';
@@ -22,6 +27,15 @@ import vue_logo from '../../Content/icons/vue_logo.svg';
 
 export const GetIcon = (iconName: string) => {
     switch(iconName) {
+        case 'arrow_left': {
+            return arrow_left;
+        }
+        case 'arrow_right': {
+            return arrow_right;
+        }
+        case 'circle': {
+            return circle;
+        }
         case 'github_logo': {
             return github_logo;
         }

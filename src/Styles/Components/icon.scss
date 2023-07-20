@@ -9,6 +9,7 @@
 
 .icon-hover {
     img:hover {
+        transition: 300ms;
         transform: translateY(-0.5rem);
     }
 }
@@ -21,4 +22,16 @@
     font-size: $font-size-extra-small-text;
     font-weight: $font-weight-semi-bold;
     text-align: center;
+}
+
+.icon-clickable {
+    cursor: pointer;
+    
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.icon-selected {
+    opacity: 0.5;
 }

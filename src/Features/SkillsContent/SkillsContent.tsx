@@ -1,8 +1,9 @@
 //Content
 import TextResources from '../../Content/TextResources.json';
 
-//Dependencies
-import { GetSkillsIcons } from './GetSkillsIcons';
+//Components
+import { ContentSlider } from '../../Components/ContentSlider';
+import { Icon } from '../../Components';
 
 //Style
 import '../../css/Features/skillscontent.css';
@@ -10,26 +11,25 @@ import '../../css/Features/skillscontent.css';
 export const SkillsContent = () => {
     let skillArea = 'languages';
 
-    const skillIcons = GetSkillsIcons('languages');
+    const languageSkills = Object.values(TextResources.icons.skills.languages)
+            .map(language => 
+                <Icon 
+                    iconName={language.iconName} 
+                    includeLabelText 
+                    label={language.label} />);
 
-    const getSkillsHeaderText = () => {
-        switch(skillArea) {
-            case 'languages':
-                return TextResources.pageContent.home.rightHandSide.skills.headerText.languages
-            case 'frameworks':
-                return TextResources.pageContent.home.rightHandSide.skills.headerText.frameworks
-            case 'tools':
-                return TextResources.pageContent.home.rightHandSide.skills.headerText.tools
-
-        }
-    }
+    const frameworkSkills = Object.values(TextResources.icons.skills.frameworks)
+            .map(framework => 
+                <Icon 
+                    iconName={framework.iconName} 
+                    includeLabelText 
+                    label={framework.label} />);
+        
+    const skillIcons = [languageSkills, frameworkSkills];
 
     return (
         <div className='skillscontent-container'>
-            <h3>{getSkillsHeaderText()}</h3>
-            <div className='skillscontent-icons'>
-                {skillIcons}
-            </div>
+            <ContentSlider headerText slides={skillIcons} slideContent={'skillsContent'} />
         </div>
     );
 }

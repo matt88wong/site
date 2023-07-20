@@ -13,12 +13,14 @@
 .skillscontent-icons {
     display: inline-flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
     column-gap: $space-medium-large;
+    width: 100%;
+    height: 204px;
 
     @media (min-width: $media-query-large) {
         column-gap: $space-medium;
+        height: 120px;
     }
 }
 

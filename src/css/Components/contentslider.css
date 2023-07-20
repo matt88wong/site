@@ -8219,27 +8219,19 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.skillscontent-container {
-  margin-top: 1rem;
-  text-align: center;
-}
-@media (min-width: 1536px) {
-  .skillscontent-container {
-    margin-top: 3rem;
-  }
+.contentSlider-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skillscontent-icons {
+.slide-dots {
   display: inline-flex;
-  flex-wrap: wrap;
   justify-content: center;
-  column-gap: 4.5rem;
-  width: 100%;
-  height: 204px;
+  margin: 0 4.5rem;
+  column-gap: 0.5rem;
 }
-@media (min-width: 1536px) {
-  .skillscontent-icons {
-    column-gap: 3rem;
-    height: 120px;
-  }
+
+.contentSlider-navigation-container {
+  display: inline-flex;
 }

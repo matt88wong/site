@@ -60,12 +60,8 @@
                 }
             },
             "rightHandSide": {
-                "skills": {
-                    "headerText": {
-                        "languages": "Languages that I create with",
-                        "frameworks": "Frameworks that I create with",
-                        "tools": "Tools that I create with"
-                    }
+                "skillsContent": {
+                    "headerText": " that I create with"
                 }
             }
         }

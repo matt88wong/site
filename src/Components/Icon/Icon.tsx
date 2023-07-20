@@ -8,7 +8,7 @@ import '../../css/Components/icon.css';
 import { IconProps } from '../../Types/Components/Icon';
 
 export const Icon = (props: IconProps) => {
-    const { iconName, includeLabelText, label, size, url } = props;
+    const { iconName, includeLabelText, label, onClickEvent, selected, size, url } = props;
 
     const getIconSize = () => {
         switch(size) {
@@ -20,6 +20,9 @@ export const Icon = (props: IconProps) => {
             }
             case 'small': {
                 return '32';
+            }
+            case 'extra-small': {
+                return '24';
             }
             default: 
                 return '64';
@@ -38,10 +41,10 @@ export const Icon = (props: IconProps) => {
     }
 
     return (
-        <div className='icon-container'>
-            <img className='icon-image' src={GetIcon(iconName)} alt={label} height={getIconSize()} width={getIconSize()}/>
-            {includeLabelText && <span className='icon-label-text'>{label}</span>}
-        </div>
+            <div className='icon-container'>
+                <img className={`icon-image ${onClickEvent ? 'icon-clickable ' : ''} ${selected ? 'icon-selected' : ''}`} onClick={onClickEvent} src={GetIcon(iconName)} alt={label} height={getIconSize()} width={getIconSize()}/>
+                {includeLabelText && <span className='icon-label-text'>{label}</span>}
+            </div>
     );
 
 }
