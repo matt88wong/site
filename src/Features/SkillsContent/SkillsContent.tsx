@@ -9,7 +9,6 @@ import { Icon } from '../../Components';
 import '../../css/Features/skillscontent.css';
 
 export const SkillsContent = () => {
-    let skillArea = 'languages';
 
     const languageSkills = Object.values(TextResources.icons.skills.languages)
             .map(language => 
@@ -24,8 +23,15 @@ export const SkillsContent = () => {
                     iconName={framework.iconName} 
                     includeLabelText 
                     label={framework.label} />);
+
+    const toolSkills = Object.values(TextResources.icons.skills.tools)
+        .map(tool => 
+            <Icon 
+                iconName={tool.iconName} 
+                includeLabelText 
+                label={tool.label} />);
         
-    const skillIcons = [languageSkills, frameworkSkills];
+    const skillIcons = [languageSkills, frameworkSkills, toolSkills];
 
     return (
         <div className='skillscontent-container'>

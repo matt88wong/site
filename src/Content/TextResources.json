@@ -136,6 +136,10 @@
                     "iconName": "dotnet_logo",
                     "label": ".NET"
                 },
+                "materialui": {
+                    "iconName": "material_ui_logo",
+                    "label": "Material UI"
+                },
                 "jest": {
                     "iconName": "jest_logo",
                     "label": "Jest"
@@ -148,21 +152,39 @@
                     "iconName": "sass_logo",
                     "label": "Sass"
                 },
+                "storybook": {
+                    "iconName": "storybook_logo",
+                    "label": "Storybook"
+                },
                 "vue": {
                     "iconName": "vue_logo",
                     "label": "Vue"
                 }
             },
-            "teamwork": {
-                "agile": {
-                    "iconName": "agile_logo",
-                    "label": "Agile"
-                }
-            },
             "tools": {
                 "git": {
                     "iconName": "git_logo",
-                    "label:": "GIT"
+                    "label": "GIT"
+                },
+                "jira": {
+                    "iconName": "jira_logo",
+                    "label": "Jira"
+                },
+                "octopusdeploy": {
+                    "iconName": "octopus_deploy_logo",
+                    "label": "Octopus Deploy"
+                },
+                "visualstudio": {
+                    "iconName": "visual_studio_logo",
+                    "label": "Visual Studio"
+                },
+                "visualstudiocode": {
+                    "iconName": "visual_studio_code_logo",
+                    "label": "Visual Studio Code"
+                },
+                "Zeplin": {
+                    "iconName": "zeplin_logo",
+                    "label": "Zeplin"
                 }
             }
         }

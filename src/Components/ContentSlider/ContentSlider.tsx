@@ -82,7 +82,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
 
     return (
         <div className='contentSlider-container'>
-            {headerText && getHeaderText()}
+            {headerText && <span className='contentSlider-header'>{getHeaderText()}</span>}
             <div className={getSlideStyle()}>
                 {slides[slideIndex]}
             </div>
