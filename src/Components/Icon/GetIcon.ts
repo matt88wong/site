@@ -18,7 +18,7 @@ import html_logo from '../../Content/icons/html_logo.svg';
 import javascript_logo from '../../Content/icons/javascript_logo.svg';
 import jest_logo from '../../Content/icons/jest_logo.svg';
 import jira_logo from '../../Content/icons/jira_logo.svg';
-import microsoft_azure_logo from '../../Content/icons/microsoft_azure_logo.svg';
+import material_ui_logo from '../../Content/icons/material_ui_logo.svg';
 import octopus_deploy_logo from '../../Content/icons/octopus_deploy_logo.svg';
 import python_logo from '../../Content/icons/python_logo.svg';
 import react_logo from '../../Content/icons/react_logo.svg';
@@ -78,8 +78,8 @@ export const GetIcon = (iconName: string) => {
         case 'jira_logo': {
             return jira_logo;
         }
-        case 'microsoft_azure_logo': {
-            return microsoft_azure_logo;
+        case 'material_ui_logo': {
+            return material_ui_logo;
         }
         case 'octopus_deploy_logo': {
             return octopus_deploy_logo;
