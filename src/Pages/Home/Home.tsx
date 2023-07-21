@@ -18,10 +18,6 @@ import '../../css/Pages/home.css';
 
 export const Home = () => {
 
-    //TODO: Constants folder
-    const FADEDURATION = 1500;
-    const SLIDEDURATION = 1000;
-
     const CoolStuffButton = () => {
         return (<Button href={TextResources.pageLinks.coolStuff.pageLink} label={TextResources.buttons.coolStuff.label} type='slide' />);
     };
@@ -37,23 +33,21 @@ export const Home = () => {
     return (
         <div className="home-container">
             <div className="home-leftside-column">
-                <Fade duration={FADEDURATION} direction='down'>
+                <Fade duration={1600}>
                     <p>
                         {TextResources.pageContent.home.leftHandSide.intro.title}
                     </p>
                 </Fade>
-                <Slide duration={SLIDEDURATION} direction='left'>
+                <Slide duration={2400}>
                     <h1>
                         {TextResources.pageContent.home.leftHandSide.intro.nameHeader}
                         <span className='name-highlight'>{TextResources.pageContent.home.leftHandSide.intro.name}</span>
                     </h1>
-                </Slide>
-                <Slide duration={SLIDEDURATION} direction='right'>
                     <h1>
                         {TextResources.pageContent.home.leftHandSide.intro.whatIdoHeader}
                     </h1>
                 </Slide>
-                <Fade duration={FADEDURATION} direction='up'>
+                <Fade duration={3200}>
                     <p>
                         {TextResources.pageContent.home.leftHandSide.intro.careerStatement}
                         <br/>
@@ -63,19 +57,19 @@ export const Home = () => {
                         </a>
                         {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine2}
                     </p>
-                </Fade>
-                <Fade duration={FADEDURATION} direction='left'>
                     <div className='home-leftside-buttons'>
                         {DownloadCvButton()}
                         {PortfolioButton()}
                         {CoolStuffButton()}
                     </div>
+                    <SocialMediaIconBar />
                 </Fade>
-                <SocialMediaIconBar />
             </div>
             <div className="home-rightside-column">
-                <Avatar />
-                <SkillsContent />
+                <Fade duration={1600} direction='down'>
+                    <Avatar />
+                    <SkillsContent />
+                </Fade>
             </div>
         </div>
     );

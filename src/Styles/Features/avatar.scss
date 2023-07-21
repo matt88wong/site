@@ -1,7 +1,7 @@
 @use '../Base' as *;
 
 .avatar-background {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
 

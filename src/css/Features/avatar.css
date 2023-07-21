@@ -8220,7 +8220,7 @@ readers do not read off random characters that represent icons */
 }
 
 .avatar-background {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
 }
 
