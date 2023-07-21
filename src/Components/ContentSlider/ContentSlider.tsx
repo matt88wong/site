@@ -5,7 +5,7 @@ import { Icon } from '../../Components';
 import TextResources from '../../Content/TextResources.json';
 
 //Dependencies
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 //Style
 import '../../css/Components/contentslider.css';
@@ -17,6 +17,12 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
     const { headerText, slides, slideContent } = props;
 
     const [slideIndex, setSlideIndex] = useState(0);
+
+    useEffect(() => {
+        var slideElement = document.getElementById('slides');
+        slideElement?.classList.add('fade');
+        setTimeout(() => {slideElement?.classList.remove('fade')}, 350);
+    }, [slideIndex]);
 
     const goToPreviousSlide = () => {
         const isFirstSlide = slideIndex === 0;
@@ -83,7 +89,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
     return (
         <div className='contentSlider-container'>
             {headerText && <span className='contentSlider-header'>{getHeaderText()}</span>}
-            <div className={getSlideStyle()}>
+            <div className={getSlideStyle()} id='slides'>
                 {slides[slideIndex]}
             </div>
             <div className='contentSlider-navigation-container'>

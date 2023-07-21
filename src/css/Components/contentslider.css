@@ -8239,3 +8239,20 @@ readers do not read off random characters that represent icons */
 .contentSlider-header {
   font-weight: 600;
 }
+
+.fade {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 350ms;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
