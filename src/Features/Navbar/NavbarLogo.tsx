@@ -8,10 +8,10 @@ import '../../css/Features/navbar.css';
 import { NavbarLinkProps }  from '../../Types/Features/NavbarLink';
 
 export const NavbarLogo = ( props: NavbarLinkProps ) => {
+    const { label, pageLink } = props;
     return (
         <div className="navbar-logo-container">
-            {/* <img src={ logo } width="500" height="300" alt='Matthew Wong' /> */}
-            <NavbarLink pageLink={props.pageLink} label={'MATTHEW WONG'}/>
+            <NavbarLink pageLink={pageLink} label={label}/>
         </div>
     );
 };

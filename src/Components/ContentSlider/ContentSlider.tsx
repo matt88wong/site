@@ -82,7 +82,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
     const getSlideStyle = () => {
         switch(slideContent) {
             case 'skillsContent': 
-                return 'skillscontent-icons'
+                return 'skills-icons'
         }
     }
 

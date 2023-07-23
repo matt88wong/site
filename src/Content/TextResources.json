@@ -1,7 +1,7 @@
 {
     "pageLinks": {
         "coolStuff": {
-            "label": "cool stuff",
+            "label": "Cool Stuff",
             "pageLink": "/coolstuff",
             "type": "navbar"
         },
@@ -22,23 +22,18 @@
                 "type": "navbar"
             }
         },
-        "aboutMe": {
-            "label": "about me",
+        "about": {
+            "label": "About",
             "pageLink": "/about",
             "type": "navbar"
         },
         "portfolio": {
-            "label": "portfolio",
+            "label": "Portfolio",
             "pageLink": "/portfolio",
             "type": "navbar"
         },
-        "professional": {
-            "label": "professional",
-            "pageLink": "/professional",
-            "type": "navbar"
-        },
         "home": {
-            "label": "home",
+            "label": "Matthew Wong",
             "pageLink": "/",
             "type": "navbar"
         }
@@ -62,6 +57,25 @@
             "rightHandSide": {
                 "skillsContent": {
                     "headerText": " that I create with"
+                }
+            }
+        },
+        "portfolio": {
+            "title": "Matthew's Portfolio",
+            "projects": {
+                "matthewwong": {
+                    "aboutstatement": "This website right here! The objective was to develop and showcase my web making skills, portfolio and some other cool stuff here and there. Everything was coded from scratch aside from the wacky home page fade and slide transitions :)",
+                    "madewithstatement": "Made lovingly with the following tech:",
+                    "thumbnailName": "coming soon",
+                    "title": "Matthew Wong 1.0",
+                    "desiredIconSet": "matthewwong"
+                },
+                "comingsoon": {
+                    "title": "Coming soon...",
+                    "aboutstatement": "Some more projects!",
+                    "madewithstatement": "Made with some different and cool tech that's for sure...",
+                    "thumbnailName": "coming soon",
+                    "desiredIconSet": "comingsoon"
                 }
             }
         }
@@ -182,7 +196,7 @@
                     "iconName": "visual_studio_code_logo",
                     "label": "Visual Studio Code"
                 },
-                "Zeplin": {
+                "zeplin": {
                     "iconName": "zeplin_logo",
                     "label": "Zeplin"
                 }

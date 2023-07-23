@@ -1,1 +1,2 @@
-export { SkillsContent } from './SkillsContent';
+export { SkillsIcons } from './SkillsIcons';
+export { SkillsContentSlider } from './SkillsContentSlider';

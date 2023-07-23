@@ -4,7 +4,14 @@
 @mixin flex-column {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     //https://stackoverflow.com/questions/37386244/what-does-flex-1-mean
     flex: 1;
+}
+
+//Icon layout mixin
+@mixin icon-layout {    
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: $space-medium-large;
 }

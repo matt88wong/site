@@ -8219,17 +8219,17 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.skillscontent-container {
+.skillscontentslider-container {
   margin-top: 1rem;
   text-align: center;
 }
 @media (min-width: 1536px) {
-  .skillscontent-container {
+  .skillscontentslider-container {
     margin-top: 3rem;
   }
 }
 
-.skillscontent-icons {
+.skills-icons {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -8238,7 +8238,7 @@ readers do not read off random characters that represent icons */
   height: 204px;
 }
 @media (min-width: 1536px) {
-  .skillscontent-icons {
+  .skills-icons {
     column-gap: 3rem;
     height: 120px;
   }

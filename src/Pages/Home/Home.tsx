@@ -10,7 +10,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 
 //Features
 import { Avatar } from '../../Features';
-import { SkillsContent } from '../../Features';
+import { SkillsContentSlider } from '../../Features';
 import { SocialMediaIconBar } from '../../Features';
 
 //Style
@@ -68,7 +68,7 @@ export const Home = () => {
             <div className="home-rightside-column">
                 <Fade duration={1600} direction='down'>
                     <Avatar />
-                    <SkillsContent />
+                    <SkillsContentSlider />
                 </Fade>
             </div>
         </div>

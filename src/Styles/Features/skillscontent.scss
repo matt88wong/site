@@ -1,7 +1,7 @@
 @use '../Base' as *;
 @use '../Mixins/' as *;
 
-.skillscontent-container {
+.skillscontentslider-container {
     margin-top: $space-small;
     text-align: center;
 
@@ -10,11 +10,8 @@
     }
 }
 
-.skillscontent-icons {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: $space-medium-large;
+.skills-icons {
+    @include icon-layout;
     width: 100%;
     height: 204px;
 

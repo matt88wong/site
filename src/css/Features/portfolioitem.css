@@ -8219,83 +8219,39 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.home-container {
-  font-family: "Roboto";
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  font-weight: 500;
-  line-height: 1.5rem;
+.portfolio-item-container {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 840px;
+  height: fit-content;
+}
+.portfolio-item-container p {
+  font-size: 16px;
 }
 @media (min-width: 1536px) {
-  .home-container {
+  .portfolio-item-container p {
     font-size: 24px;
   }
 }
-.home-container h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-  line-height: 0;
-}
-@media (min-width: 1536px) {
-  .home-container h1 {
-    font-size: 48px;
-  }
-}
-@media (min-width: 1536px) {
-  .home-container {
-    font-weight: 500;
-    line-height: 2rem;
-  }
+.portfolio-item-container:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
 
-.home-leftside-column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin: 1rem 0 1rem 3rem;
-}
-@media (min-width: 1536px) {
-  .home-leftside-column {
-    margin: 6rem 3rem;
-  }
+.portfolio-item-blurb {
+  text-align: left;
+  padding: 0 2rem 2rem 2rem;
 }
 
-.home-leftside-buttons {
+.portoflio-item-icons {
   display: inline-flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: left;
-  column-gap: 1rem;
-}
-@media (min-width: 1536px) {
-  .home-leftside-buttons {
-    column-gap: 3rem;
-  }
+  justify-content: center;
+  column-gap: 4.5rem;
+  column-gap: 2rem;
 }
 
-.home-rightside-column {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin: 1rem 1rem 1rem 0;
-}
-@media (min-width: 1536px) {
-  .home-rightside-column {
-    margin: 6rem 3rem;
-  }
-}
-
-.name-highlight {
-  color: #4ABDAC;
-  font-weight: 600;
-}
-
-.hidden-korok {
-  color: brown;
-  cursor: url(../../Content/images/flying-korok.png), pointer;
-  font-weight: 600;
-  text-decoration: none;
+.coming-soon {
+  width: inherit;
+  background-color: red;
+  height: 168px;
 }
