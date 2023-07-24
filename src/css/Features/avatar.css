@@ -8223,23 +8223,11 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: center;
 }
-
-.avatar-background-circle {
-  background-color: #4ABDAC;
-  height: 192px;
-  width: 252px;
-  border-radius: 50%;
+.avatar-background img {
+  width: 230px;
 }
 @media (min-width: 1536px) {
-  .avatar-background-circle {
-    background-color: brown;
+  .avatar-background img {
+    width: 420px;
   }
-}
-
-.avatar-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 80px;
 }

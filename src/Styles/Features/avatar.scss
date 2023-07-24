@@ -3,23 +3,12 @@
 .avatar-background {
     display: flex;
     justify-content: center;
-}
 
-.avatar-background-circle {
-    background-color: $fresh;
-    height: 192px;
-    width: 252px;
-    border-radius: 50%;
+    img {
+        width: 230px;
 
-    @media (min-width: $media-query-large) {
-        background-color: brown;
+        @media (min-width: $media-query-large) {
+            width: 420px;
+        }
     }
-}
-
-.avatar-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 80px;
 }
