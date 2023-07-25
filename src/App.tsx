@@ -5,7 +5,7 @@ import TextResources from './Content/TextResources.json';
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 //Pages
-import { CoolStuff, Home, Portfolio } from './Pages';
+import { Blog, Home, Portfolio } from './Pages';
 
 //Features
 import { Navbar } from './Features';
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path={TextResources.pageLinks.portfolio.pageLink} element={<Portfolio/>} />
-          <Route path={TextResources.pageLinks.coolStuff.pageLink} element={<CoolStuff />} />
+          <Route path={TextResources.pageLinks.blog.pageLink} element={<Blog />} />
         </Routes>
         <Outlet />    
       </BrowserRouter>

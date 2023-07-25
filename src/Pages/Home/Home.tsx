@@ -18,8 +18,8 @@ import '../../css/Pages/home.css';
 
 export const Home = () => {
 
-    const CoolStuffButton = () => {
-        return (<Button href={TextResources.pageLinks.coolStuff.pageLink} label={TextResources.buttons.coolStuff.label} type='slide' />);
+    const BlogButton = () => {
+        return (<Button href={TextResources.pageLinks.blog.pageLink} label={TextResources.buttons.blog.label} type='slide' />);
     };
 
     const DownloadCvButton = () => {
@@ -60,7 +60,7 @@ export const Home = () => {
                     <div className='home-leftside-buttons'>
                         {DownloadCvButton()}
                         {PortfolioButton()}
-                        {CoolStuffButton()}
+                        {BlogButton()}
                     </div>
                     <SocialMediaIconBar />
                 </Fade>

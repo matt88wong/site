@@ -1,3 +1,3 @@
 export { Home } from './Home';
-export { CoolStuff } from './CoolStuff';
+export { Blog } from './Blog';
 export { Portfolio } from './Portfolio';
