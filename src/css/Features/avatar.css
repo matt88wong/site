@@ -8228,6 +8228,6 @@ readers do not read off random characters that represent icons */
 }
 @media (min-width: 1536px) {
   .avatar-background img {
-    width: 420px;
+    width: 380px;
   }
 }

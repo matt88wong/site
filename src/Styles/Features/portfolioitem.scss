@@ -2,20 +2,22 @@
 @use '../Mixins/' as *;
 
 .portfolio-item-container {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: $width-project-item;
-    height: fit-content;
+    @include card-layout;
+}
 
-    p {
-        font-size: $font-size-extra-small-text;
-        @media (min-width: $media-query-large) {
-            font-size: $font-size-text;
-        }
+.portfolio-item-thumbnail {
+    width: 240px;
+
+    @media (min-width: $media-query-large) {
+        width: 312px;
     }
+}
 
-    &:hover {
-        box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+.portfolio-item-thumbnail-container {
+    height: 192px;
+
+    @media (min-width: $media-query-large) {
+        height: 264px;
     }
 }
 
@@ -27,10 +29,4 @@
 .portoflio-item-icons {
     @include icon-layout;
     column-gap: $space-medium-small;
-}
-
-.coming-soon {
-    width: inherit;
-    background-color: red;
-    height: 168px;
 }

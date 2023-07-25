@@ -1,0 +1,28 @@
+@use '../Base' as *;
+@use '../Mixins/' as *;
+
+.blog-post-container {
+    @include card-layout;
+    padding: $space-medium-small;
+    line-height: 20px;
+}
+
+.blog-post-header {
+    text-align: center;
+}
+
+.blog-post-grid {
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 50% 50%;
+    column-gap: $space-small;
+    margin-top: $space-extra-small;
+
+    @media (min-width: $media-query-large) {
+        margin-top: $space-small;
+    }
+}
+
+.blog-post-right-column {
+    margin-top: auto;
+}

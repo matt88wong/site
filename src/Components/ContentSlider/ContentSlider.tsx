@@ -1,9 +1,6 @@
 //Components
 import { Icon } from '../../Components';
 
-//Content
-import TextResources from '../../Content/TextResources.json';
-
 //Dependencies
 import { useEffect, useState } from 'react';
 
@@ -14,7 +11,7 @@ import '../../css/Components/contentslider.css';
 import { ContentSliderProps } from "../../Types/Components/ContentSlider";
 
 export const ContentSlider = ( props: ContentSliderProps ) => {
-    const { headerText, slides, slideContent } = props;
+    const { slides } = props;
 
     const [slideIndex, setSlideIndex] = useState(0);
 
@@ -48,6 +45,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
         return <Icon iconName='arrow_right' label='arrow_right' onClickEvent={goToNextSlide} size='extra-small'/>
     };
 
+    //TODO: style dots so they have their own container/are fixed to bottom of parent root container (somehow lol)
     const slideDots = () => {
         return (
             <div className='slide-dots'>
@@ -61,35 +59,9 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
         );
     }
 
-    const getHeaderText = () => {
-        switch(slideContent) {
-            case 'skillsContent':
-                const skillsContentHeaderGenericText = TextResources.pageContent.home.rightHandSide.skillsContent.headerText;
-                const skillsContentHeader = () => {
-                    if (slideIndex === 0) 
-                        return 'Languages ' + skillsContentHeaderGenericText;
-                    if (slideIndex === 1) 
-                        return 'Frameworks ' + skillsContentHeaderGenericText;
-                    if (slideIndex === 2) 
-                        return 'Tools ' + skillsContentHeaderGenericText;
-                    if (slideIndex === 3) 
-                        return 'Teamwork ' + skillsContentHeaderGenericText;
-                }
-                return skillsContentHeader();
-        }
-    }
-
-    const getSlideStyle = () => {
-        switch(slideContent) {
-            case 'skillsContent': 
-                return 'skills-icons'
-        }
-    }
-
     return (
         <div className='contentSlider-container'>
-            {headerText && <span className='contentSlider-header'>{getHeaderText()}</span>}
-            <div className={getSlideStyle()} id='slides'>
+            <div id='slides'>
                 {slides[slideIndex]}
             </div>
             <div className='contentSlider-navigation-container'>

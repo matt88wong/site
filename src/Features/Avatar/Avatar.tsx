@@ -8,7 +8,7 @@ export const Avatar = () => {
 
     return (
         <div className='avatar-background'> 
-            <img src={avatar} />
+            <img src={avatar} alt='Matthew Wong'/>
         </div>
     )
 

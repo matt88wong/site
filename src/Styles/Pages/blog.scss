@@ -3,10 +3,7 @@
 
 .blog-container {
     @include regular-text;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    margin: $space-medium-large;
 
     font-weight: $font-weight-medium;
     line-height: $line-height-medium-large;
@@ -19,23 +16,6 @@
     @media (min-width: $media-query-large) {
         font-weight: $font-weight-medium;
         line-height: $line-height-large;
-    }
-}
-
-.blog-leftside-column {
-    @include flex-column;
-    margin: $space-small 0 $space-small $space-medium;
-
-    @media (min-width: $media-query-large) {
-        margin: $space-large $space-medium;
-    }
-}
-
-.blog-rightside-column {
-    @include flex-column;
-    margin: $space-small $space-small $space-small 0;
-
-    @media (min-width: $media-query-large) {
-        margin: $space-large $space-medium;
+        margin: $space-large;
     }
 }

@@ -21,18 +21,18 @@ export const Portfolio = () => {
                 <h1>{TextResources.pageContent.portfolio.title}</h1>
                 <div className='portfolio-items'>
                     <PortfolioItem 
-                        aboutStatement={TextResources.pageContent.portfolio.projects.matthewwong.aboutstatement} 
-                        desiredIconSet={TextResources.pageContent.portfolio.projects.matthewwong.desiredIconSet} 
-                        madeWithStatement={TextResources.pageContent.portfolio.projects.matthewwong.madewithstatement} 
-                        thumbnailName={TextResources.pageContent.portfolio.projects.matthewwong.thumbnailName} 
-                        title={TextResources.pageContent.portfolio.projects.matthewwong.title} 
+                        aboutStatement={TextResources.pageContent.portfolio.projects.matthewWong.aboutStatement} 
+                        desiredIconSet={TextResources.pageContent.portfolio.projects.matthewWong.desiredIconSet} 
+                        madeWithStatement={TextResources.pageContent.portfolio.projects.matthewWong.madeWithStatement} 
+                        thumbnailName={TextResources.pageContent.portfolio.projects.matthewWong.thumbnailName} 
+                        title={TextResources.pageContent.portfolio.projects.matthewWong.title} 
                     />
                     <PortfolioItem 
-                        aboutStatement={TextResources.pageContent.portfolio.projects.comingsoon.aboutstatement} 
-                        desiredIconSet={TextResources.pageContent.portfolio.projects.comingsoon.desiredIconSet} 
-                        madeWithStatement={TextResources.pageContent.portfolio.projects.comingsoon.madewithstatement} 
-                        thumbnailName={TextResources.pageContent.portfolio.projects.comingsoon.thumbnailName} 
-                        title={TextResources.pageContent.portfolio.projects.comingsoon.title} 
+                        aboutStatement={TextResources.pageContent.portfolio.projects.comingSoon.aboutStatement} 
+                        desiredIconSet={TextResources.pageContent.portfolio.projects.comingSoon.desiredIconSet} 
+                        madeWithStatement={TextResources.pageContent.portfolio.projects.comingSoon.madeWithStatement} 
+                        thumbnailName={TextResources.pageContent.portfolio.projects.comingSoon.thumbnailName} 
+                        title={TextResources.pageContent.portfolio.projects.comingSoon.title} 
                     />
                 </div>
             </div>

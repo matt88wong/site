@@ -8218,39 +8218,3 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
   border-width: 0;
 }
-
-.portfolio-container {
-  font-family: "Roboto";
-  font-size: 20px;
-  text-align: center;
-  font-weight: 500;
-  line-height: 1.5rem;
-  margin: 4.5rem;
-}
-@media (min-width: 1536px) {
-  .portfolio-container {
-    font-size: 24px;
-  }
-}
-.portfolio-container h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-}
-@media (min-width: 1536px) {
-  .portfolio-container h1 {
-    font-size: 48px;
-  }
-}
-@media (min-width: 1536px) {
-  .portfolio-container {
-    font-weight: 500;
-    line-height: 2rem;
-    margin: 6rem;
-  }
-}
-
-.portfolio-items {
-  display: grid;
-  justify-content: center;
-  row-gap: 24px;
-}

@@ -8236,10 +8236,6 @@ readers do not read off random characters that represent icons */
   display: inline-flex;
 }
 
-.contentSlider-header {
-  font-weight: 600;
-}
-
 .fade {
   opacity: 1;
   animation-name: fadeInOpacity;

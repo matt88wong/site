@@ -1,0 +1,32 @@
+@use '../Base' as *;
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 230px;
+
+        @media (min-width: $media-query-large) {
+            width: 380px;
+        }
+    }
+}
+
+.logo-large {
+    width: 240px;
+
+    @media (min-width: $media-query-large) {
+        width: 312px;
+    }
+}
+
+.logo-small {
+    width: 24x;
+
+    @media (min-width: $media-query-large) {
+        width: 36px;
+    }
+}

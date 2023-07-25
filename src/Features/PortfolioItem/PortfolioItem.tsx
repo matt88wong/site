@@ -1,3 +1,7 @@
+//Content
+import coming_soon from '../../Content/images/coming_soon.png';
+import matthew_wong_logo from '../../Content/images/matthew_wong_logo.png';
+
 //Features
 import { SkillsIcons } from '../SkillsContent';
 
@@ -11,14 +15,17 @@ export const PortfolioItem = (props: PortfolioItemInterface) => {
     const { aboutStatement, desiredIconSet, madeWithStatement, thumbnailName, title} = props;
 
     const GetThumbnail = () => {
-        if (thumbnailName === 'coming soon')
-            return (<div className='coming-soon'/>);
+        switch (thumbnailName) {
+            case 'coming soon':
+                return (<img alt={title} className='portfolio-item-thumbnail' src={coming_soon}/>);
+            case 'matthew_wong_logo':
+                return (<img alt={title} className='portfolio-item-thumbnail' src={matthew_wong_logo} />);
+        }
     }
 
-    //Design be thumbnail, below a title, below a statement, below a made with
     return (
         <div className='portfolio-item-container'>
-            <div>
+            <div className='portfolio-item-thumbnail-container'>
                 {GetThumbnail()}
             </div>
             <div className='portfolio-item-blurb'>

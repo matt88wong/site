@@ -8222,8 +8222,8 @@ readers do not read off random characters that represent icons */
 .portfolio-item-container {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 840px;
-  height: fit-content;
+  margin: auto;
+  width: 100%;
 }
 .portfolio-item-container p {
   font-size: 16px;
@@ -8237,6 +8237,24 @@ readers do not read off random characters that represent icons */
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
 
+.portfolio-item-thumbnail {
+  width: 240px;
+}
+@media (min-width: 1536px) {
+  .portfolio-item-thumbnail {
+    width: 312px;
+  }
+}
+
+.portfolio-item-thumbnail-container {
+  height: 192px;
+}
+@media (min-width: 1536px) {
+  .portfolio-item-thumbnail-container {
+    height: 264px;
+  }
+}
+
 .portfolio-item-blurb {
   text-align: left;
   padding: 0 2rem 2rem 2rem;
@@ -8248,10 +8266,4 @@ readers do not read off random characters that represent icons */
   justify-content: center;
   column-gap: 4.5rem;
   column-gap: 2rem;
-}
-
-.coming-soon {
-  width: inherit;
-  background-color: red;
-  height: 168px;
 }

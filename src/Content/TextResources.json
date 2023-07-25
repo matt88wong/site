@@ -1,8 +1,8 @@
 {
     "pageLinks": {
-        "coolStuff": {
-            "label": "Cool Stuff",
-            "pageLink": "/coolstuff",
+        "blog": {
+            "label": "Blog",
+            "pageLink": "/blog",
             "type": "navbar"
         },
         "funStuff":  {
@@ -60,20 +60,121 @@
                 }
             }
         },
+        "blog": {
+            "content": {
+                "about": "This is a bit of a blog page where I like to share and showcase some stuff that I'm passionate about, which I think is kinda cool and interesting",
+                "tunes": {
+                    "title": "Matt's Top Ten Tunes Right Now",
+                    "indexText": "Number ",
+                    "topTen": {
+                        "numberOne": {
+                            "songTitle": "Home Again",
+                            "songArtist": "Beach House",
+                            "songRecord": "Devotion (2008)",
+                            "genre": "Dream Pop",
+                            "about": "The signature Beach House reverb soaked slide guitar, paired with a moody vocal from Victoria Legrand who cites ambiguous lyrics about returning \"home\" makes for a great soundtrack ending to any introspective cold winter's stroll.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/4UEJ9jO9Q1Iainvq1Rp9t7?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/j5Tt8bmeCBA?start=4334"
+                        },
+                        "numberTwo": {
+                            "songTitle": "Light My Fire",
+                            "songArtist": "The Doors",
+                            "songRecord": "The Doors (1967)",
+                            "genre": "Art Rock, Psychedelic Rock",
+                            "about": "A song ahead of its time that makes me want to light a fire (metaphorically not literally!). Jim Morrisons croon is one of a kind and the keyboard sounds like a wizard is conjuring up a hypnotic spell. At 7:10 running time this track was one of the progenitors of future epic prog rock tales.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/5uvosCdMlFdTXhoazkTI5R?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/mbj1RFaoyLk"
+                        },
+                        "numberThree": {
+                            "songTitle": "YOU CAN NEVER COME TO THIS PLACE",
+                            "songArtist": "Masayoshi Takanaka",
+                            "songRecord": "The Rainbow Goblins (1981)",
+                            "genre": "Alt Rock, City Pop",
+                            "about": "The epic ending to Japanese guitar god Masayoshi Takanaka's audacious attempt at adapting the German childrens book of the same name into a soundtrack. Takanaka manages to infuse Disney tear jerker levels of emotion into a guitar solo that always inspires me keep playing.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/2XpyxGzsM4mSDN5MllXjAw?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/46VEnVL10IU"
+                        },
+                        "numberFour": {
+                            "songTitle": "Caribou",
+                            "songArtist": "Pixies",
+                            "songRecord": "Come On Pilgrim (1987)",
+                            "genre": "Alt Rock",
+                            "about": "The first ever Pixies song set a great blueprint for the 90's wave of grunge with it's quiet then loud progression. It's an absolute ripper to play along with if you're a beginner guitar player and the anti \"concrete jungle\" lyrics somehow makes it that much sweeter.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/0zClrkFd5UQuUFys243KjP?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/gJ2C7ZetzCc"
+                        },
+                        "numberFive": {
+                            "songTitle": "Dig a Pony",
+                            "songArtist": "The Beatles",
+                            "songRecord": "Let It Be (1970)",
+                            "genre": "Blues, Rock, GOAT",
+                            "about": "My favourite Beatles tune always changes every month and currently it's this! I always knew I dug ponies deep down... There is just something so weird yet gripping about this track. It's odd rambunctious main riff and John's vocals just hit right. George Harrison's guitar solo just oozes soul and cool as well.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/4OUmlC67FoPLvQNuE5C7kF?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/LpdJE7HG8Ls"
+                        },
+                        "numberSix": {
+                            "songTitle": "Instant Crush",
+                            "songArtist": "Daft Punk x Julian Casablancas",
+                            "songRecord": "Random Access Memories (2013)",
+                            "genre": "Synth Pop",
+                            "about": "The single that should be more appreciated than \"Get Lucky with Pharrel\" IMO (definitely not because I love The Strokes). Some dope auto tune vocal effects and Julians dance moves in the music video make it even more awesome.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/2cGxRwrMyEAp8dEbuZaVv6?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/a5uQMwRMHcs"
+                        },
+                        "numberSeven": {
+                            "songTitle": "I Love LA",
+                            "songArtist": "Starcrawler",
+                            "songRecord": "Starcrawler (2018)",
+                            "genre": "Pop Rock",
+                            "about": "This catchy yet gritty single by LA Pop Rockers Starcrawler has wormed it's way into my head and put some rose tinted glasses over some bad experiences I had in LA as a teen. I really now do love LA... ok maybe just the burgers (I really miss In N Out burger, you gotta try it if you're in California).",
+                            "spotifyLink": "https://open.spotify.com/embed/track/5rc1AW1Ctdhs3HKJPviQdh?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/JR6n23_fL3o"
+                        },
+                        "numberEight": {
+                            "songTitle": "She Works Out Too Much",
+                            "songArtist": "MGMT",
+                            "songRecord": "Little Dark Age (2018)",
+                            "genre": "Synth Pop",
+                            "about": "A song that can either be described as MGMT complaining about a woman who simply works out too much or a deteriorating relationship. The synths take me straight to some fun 1980's Richard Simmons workout video world. It's recently become a must play in my running/gym soundtrack.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/3XOKU8CKSiQsuQHD5vhzo5?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/eYt0lRMrt7k"
+                        },
+                        "numberNine": {
+                            "songTitle": "12:51",
+                            "songArtist": "The Strokes",
+                            "songRecord": "Room On Fire (2003)",
+                            "genre": "Indie Rock",
+                            "about": "A catchy single from The Strokes 2003 second album \"Room On Fire\", this song is currently my go to play along song, as it's such a straightforward bop. Bonus points for it's synth esque lead guitar that sounds nostalgically similar to the soundtracks Pokemon games that I grew up with.",
+                            "spotifyLink": "https://open.spotify.com/embed/track/6Yu1OL8I0D4vjOzYdsXYGK?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/LPAVDHo1Elc"
+                        },                        
+                        "numberTen": {
+                            "songTitle": "Every Single Thing",
+                            "songArtist": "HOMESHAKE",
+                            "songRecord": "Fresh Air (2017)",
+                            "genre": "Lo-Fi, Synth Pop",
+                            "about": "A tasty morsel from Montreals singer songwriter Pete Sagar, the bouncy bass and synth progression somehow puts me in a groovy indie mood (whatever that means) and serves as a nice backing track for walking through the city (not sure why but it just works).",
+                            "spotifyLink": "https://open.spotify.com/embed/track/4lpHw4twMvrg0pjut49DZz?utm_source=generator",
+                            "videoLink": "https://www.youtube.com/embed/0aOzT11GMKM"
+                        }
+                    }
+                }
+            }
+        },
         "portfolio": {
             "title": "Matthew's Portfolio",
             "projects": {
-                "matthewwong": {
-                    "aboutstatement": "This website right here! The objective was to develop and showcase my web making skills, portfolio and some other cool stuff here and there. Everything was coded from scratch aside from the wacky home page fade and slide transitions :)",
-                    "madewithstatement": "Made lovingly with the following tech:",
-                    "thumbnailName": "coming soon",
+                "matthewWong": {
+                    "aboutStatement": "This website right here! The objective was to develop and showcase my web making skills, portfolio and some other cool stuff here and there. Everything was coded from scratch aside from the wacky home page fade and slide transitions :)",
+                    "madeWithStatement": "Made lovingly with the following tech:",
+                    "thumbnailName": "matthew_wong_logo",
                     "title": "Matthew Wong 1.0",
                     "desiredIconSet": "matthewwong"
                 },
-                "comingsoon": {
+                "comingSoon": {
                     "title": "Coming soon...",
-                    "aboutstatement": "Some more projects!",
-                    "madewithstatement": "Made with some different and cool tech that's for sure...",
+                    "aboutStatement": "Some more projects!",
+                    "madeWithStatement": "Made with some different and cool tech that's for sure...",
                     "thumbnailName": "coming soon",
                     "desiredIconSet": "comingsoon"
                 }
@@ -81,8 +182,8 @@
         }
     },
     "buttons": {
-        "coolStuff": {
-            "label": "Cool stuff"
+        "blog": {
+            "label": "My Blog"
         },
         "cv": {
             "label": "View my CV"

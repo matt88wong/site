@@ -8243,3 +8243,7 @@ readers do not read off random characters that represent icons */
     height: 120px;
   }
 }
+
+.skills-header {
+  font-weight: 600;
+}

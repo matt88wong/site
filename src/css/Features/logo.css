@@ -8219,38 +8219,34 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.portfolio-container {
-  font-family: "Roboto";
-  font-size: 20px;
-  text-align: center;
-  font-weight: 500;
-  line-height: 1.5rem;
-  margin: 4.5rem;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.logo-container img {
+  width: 230px;
 }
 @media (min-width: 1536px) {
-  .portfolio-container {
-    font-size: 24px;
-  }
-}
-.portfolio-container h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-}
-@media (min-width: 1536px) {
-  .portfolio-container h1 {
-    font-size: 48px;
-  }
-}
-@media (min-width: 1536px) {
-  .portfolio-container {
-    font-weight: 500;
-    line-height: 2rem;
-    margin: 6rem;
+  .logo-container img {
+    width: 380px;
   }
 }
 
-.portfolio-items {
-  display: grid;
-  justify-content: center;
-  row-gap: 24px;
+.logo-large {
+  width: 240px;
+}
+@media (min-width: 1536px) {
+  .logo-large {
+    width: 312px;
+  }
+}
+
+.logo-small {
+  width: 24x;
+}
+@media (min-width: 1536px) {
+  .logo-small {
+    width: 36px;
+  }
 }

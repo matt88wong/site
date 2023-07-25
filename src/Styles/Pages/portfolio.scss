@@ -8,7 +8,7 @@
     font-weight: $font-weight-medium;
     line-height: $line-height-medium-large;
 
-    margin: $space-small;
+    margin: $space-medium-large;
 
     h1 {
         @include header-text;
@@ -17,7 +17,7 @@
     @media (min-width: $media-query-large) {
         font-weight: $font-weight-medium;
         line-height: $line-height-large;
-        margin: $space-medium
+        margin: $space-large;
     }
 }
 

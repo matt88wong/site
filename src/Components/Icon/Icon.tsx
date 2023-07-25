@@ -13,7 +13,7 @@ export const Icon = (props: IconProps) => {
     const getIconSize = () => {
         switch(size) {
             case 'large': {
-                return '80';
+                return '76';
             }
             case 'medium': {
                 return '64';
