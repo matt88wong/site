@@ -8225,7 +8225,7 @@ readers do not read off random characters that represent icons */
   margin: auto;
   width: 100%;
   padding: 2rem;
-  line-height: 20px;
+  line-height: 1.5rem;
 }
 .blog-post-container p {
   font-size: 16px;

@@ -4,7 +4,7 @@
 .blog-post-container {
     @include card-layout;
     padding: $space-medium-small;
-    line-height: 20px;
+    line-height: $line-height-medium-large;
 }
 
 .blog-post-header {
