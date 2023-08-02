@@ -62,9 +62,10 @@
         },
         "blog": {
             "content": {
-                "about": "This is a bit of a blog page where I like to share and showcase some stuff that I'm passionate about, which I think is kinda cool and interesting",
+                "title": "Matt's Blog",
+                "about": "This is a page where I'd like to share and showcase some stuff that I'm passionate about including tech things and beyond!",
                 "tunes": {
-                    "title": "Matt's Top Ten Tunes Right Now",
+                    "title": "Matt's Ten Fave Tunes Right Now",
                     "indexText": "Number ",
                     "topTen": {
                         "numberOne": {

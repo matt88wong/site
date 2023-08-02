@@ -19,3 +19,16 @@
         margin: $space-large;
     }
 }
+
+.blog-header {
+    text-align: center;
+    margin: $space-medium 0; 
+
+    h1 {
+        margin-bottom: $space-medium;
+    }
+
+    @media (min-width: $media-query-large) {
+        margin: $space-large 0;
+    }
+}
