@@ -4,6 +4,7 @@ import '../../css/Components/video.css';
 //Types
 import { VideoProps } from '../../Types/Components/Video';
 
+//TODO: should be named iframe or media or something lol
 export const Video = (props: VideoProps) => {
     const { type, url } = props;
 
@@ -22,6 +23,7 @@ export const Video = (props: VideoProps) => {
             src={url}
             title={type}
             allow={GetIFrameAllow()}
+            allowFullScreen
         />
     )
 }
