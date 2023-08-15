@@ -6,6 +6,21 @@
     flex-wrap: wrap;
 }
 
+.mobile-contentSlider-navigation-position {
+	@media (max-width: $media-query-small) {
+		top: 0 !important;
+		display: grid !important;
+		column-gap: 192px;
+		grid-template-columns: 1fr 1fr;
+    }
+}
+
+.mobile-slide-dots {
+	@media (max-width: $media-query-small) {
+		display: none !important;
+    }
+}
+
 .slide-dots {
     display: inline-flex;
     justify-content: center;
@@ -15,6 +30,11 @@
 
 .contentSlider-navigation-container {
     display: inline-flex;
+
+	@media (max-width: $media-query-small) {
+		position: relative;
+		top: 92px;
+    }
 }
 
 .fade {

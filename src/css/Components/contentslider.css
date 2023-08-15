@@ -8225,6 +8225,21 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
 }
 
+@media (max-width: 536px) {
+  .mobile-contentSlider-navigation-position {
+    top: 0 !important;
+    display: grid !important;
+    column-gap: 192px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 536px) {
+  .mobile-slide-dots {
+    display: none !important;
+  }
+}
+
 .slide-dots {
   display: inline-flex;
   justify-content: center;
@@ -8234,6 +8249,12 @@ readers do not read off random characters that represent icons */
 
 .contentSlider-navigation-container {
   display: inline-flex;
+}
+@media (max-width: 536px) {
+  .contentSlider-navigation-container {
+    position: relative;
+    top: 92px;
+  }
 }
 
 .fade {

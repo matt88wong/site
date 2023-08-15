@@ -13,10 +13,14 @@
     margin-left: $space-medium;
     margin-right: auto;
     cursor: pointer;
+
+    @media (max-width: $media-query-small) {
+        margin-left: $space-extra-small;
+    }
 }
 
 .navbar-link {
-    @include navbar-link-text;
+    @include regular-text;
     color: $black;
     cursor: pointer;
     margin-right: $space-small;
@@ -31,5 +35,9 @@
     
     @media (min-width: $media-query-large) {
         margin-right: $space-large;
+    }
+
+    @media (max-width: $media-query-small) {
+        margin-right: $space-small;
     }
 }

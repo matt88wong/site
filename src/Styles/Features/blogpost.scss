@@ -3,12 +3,24 @@
 
 .blog-post-container {
     @include card-layout;
-    padding: $space-medium-small;
     line-height: $line-height-medium-large;
+    padding: $space-medium-small;
+
+    @media (max-width: $media-query-small) {
+        padding: $space-small;
+    }
 }
 
 .blog-post-header {
     text-align: center;
+
+    h1 {
+        @include header-text;
+
+        @media (max-width: $media-query-small) {
+            line-height: $line-height-large;
+        }
+    }
 }
 
 .blog-post-grid {
@@ -20,6 +32,15 @@
 
     @media (min-width: $media-query-large) {
         margin-top: $space-small;
+    }
+
+    @media (max-width: $media-query-small) {
+        grid-template-columns: 100%;
+        justify-content: center;
+
+        h2 {
+            font-size: $font-size-small-text;
+        }
     }
 }
 

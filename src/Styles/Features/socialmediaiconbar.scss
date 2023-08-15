@@ -3,6 +3,12 @@
 .socialmediaiconbar-container {
     display: inline-flex;
     flex-direction: row;
-    gap: $gap-medium;
+    gap: $space-medium;
     margin: $space-medium-small $space-medium 0 0;
+
+    @media (max-width: $media-query-small) {
+        //janky mobile
+        gap: 12px;
+        margin: $space-medium-small 0;
+    }
 }

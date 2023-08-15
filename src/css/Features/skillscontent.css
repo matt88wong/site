@@ -8234,8 +8234,15 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 4.5rem;
-  width: 100%;
+  width: fit-content;
   height: 204px;
+}
+@media (max-width: 536px) {
+  .skills-icons {
+    column-gap: 1rem;
+    height: 96px;
+    max-width: 360px;
+  }
 }
 @media (min-width: 1536px) {
   .skills-icons {

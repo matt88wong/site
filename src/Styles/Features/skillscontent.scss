@@ -12,8 +12,14 @@
 
 .skills-icons {
     @include icon-layout;
-    width: 100%;
+    width: fit-content;
     height: 204px;
+
+    @media (max-width: $media-query-small) {
+        column-gap: $space-small;
+        height: 96px;
+        max-width: 360px;
+    }
 
     @media (min-width: $media-query-large) {
         column-gap: $space-medium;

@@ -67,6 +67,7 @@
                 "tunes": {
                     "title": "Matt's Ten Fave Tunes Right Now",
                     "indexText": "Number ",
+                    "genreText": "Genre - ",
                     "topTen": {
                         "numberOne": {
                             "songTitle": "Home Again",

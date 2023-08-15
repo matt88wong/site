@@ -5,6 +5,15 @@
     font-family: $standard-font;
     font-size: $font-size-small-text;
 
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+    @media (max-width: $media-query-small) {
+        font-size: $font-size-extra-small-text;
+    }
+
     @media (min-width: $media-query-large) {   
         font-size: $font-size-text;
     }
@@ -20,20 +29,14 @@
 @mixin header-text {
     font-family: $standard-font;
     font-size: $font-size-small-title;
+    line-height: 1rem;
+
+    @media (max-width: $media-query-small) {
+        font-size: $font-size-mobile-title;
+    }
 
     @media (min-width: $media-query-large) {   
         font-size: $font-size-title;
-    }
-}
-
-//Navbar link
-@mixin navbar-link-text {
-    font-family: $standard-font;
-    font-size: $font-size-small-text;
-
-    a {
-        color: $black;
-        text-decoration: none;
     }
 }
 

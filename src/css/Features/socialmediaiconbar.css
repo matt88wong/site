@@ -8222,6 +8222,12 @@ readers do not read off random characters that represent icons */
 .socialmediaiconbar-container {
   display: inline-flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 3rem;
   margin: 2rem 3rem 0 0;
+}
+@media (max-width: 536px) {
+  .socialmediaiconbar-container {
+    gap: 12px;
+    margin: 2rem 0;
+  }
 }

@@ -15,9 +15,12 @@
     }
     
     @media (min-width: $media-query-large) {
-        font-weight: $font-weight-medium;
         line-height: $line-height-large;
         margin: $space-large;
+    }
+
+    @media (max-width: $media-query-small) {
+        margin: $space-small;
     }
 }
 

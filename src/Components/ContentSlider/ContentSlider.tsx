@@ -11,7 +11,7 @@ import '../../css/Components/contentslider.css';
 import { ContentSliderProps } from "../../Types/Components/ContentSlider";
 
 export const ContentSlider = ( props: ContentSliderProps ) => {
-    const { slides } = props;
+    const { mobileDots, slides } = props;
 
     const [slideIndex, setSlideIndex] = useState(0);
 
@@ -48,7 +48,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
     //TODO: style dots so they have their own container/are fixed to bottom of parent root container (somehow lol)
     const slideDots = () => {
         return (
-            <div className='slide-dots'>
+            <div className={`${mobileDots ? 'mobile-slide-dots' : ''} slide-dots`}>
                 {slides.map((slide, slideNumber) => {
                     if (slideNumber === slideIndex)
                         return <Icon iconName='circle' label='circle' onClickEvent={() => goToSpecificSlide(slideNumber)} selected size='extra-small'/>
@@ -64,7 +64,7 @@ export const ContentSlider = ( props: ContentSliderProps ) => {
             <div id='slides'>
                 {slides[slideIndex]}
             </div>
-            <div className='contentSlider-navigation-container'>
+            <div className={`${mobileDots ? 'mobile-contentSlider-navigation-position' : ''} contentSlider-navigation-container`}>
                 {leftSlideArrow()}
                 {slideDots()}
                 {rightSlideArrow()}

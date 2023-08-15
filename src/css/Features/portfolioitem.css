@@ -8236,6 +8236,11 @@ readers do not read off random characters that represent icons */
 .portfolio-item-container:hover {
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 536px) {
+  .portfolio-item-container {
+    width: fit-content;
+  }
+}
 
 .portfolio-item-thumbnail {
   width: 240px;

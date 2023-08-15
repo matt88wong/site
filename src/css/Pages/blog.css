@@ -8226,19 +8226,18 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
   line-height: 1.5rem;
 }
+.blog-container a {
+  color: #000000;
+  text-decoration: none;
+}
+@media (max-width: 536px) {
+  .blog-container {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1536px) {
   .blog-container {
     font-size: 24px;
-  }
-}
-.blog-container h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-  line-height: 0;
-}
-@media (min-width: 1536px) {
-  .blog-container h1 {
-    font-size: 48px;
   }
 }
 @media (min-width: 1536px) {
@@ -8246,6 +8245,11 @@ readers do not read off random characters that represent icons */
     font-weight: 500;
     line-height: 2rem;
     margin: 6rem;
+  }
+}
+@media (max-width: 536px) {
+  .blog-container {
+    margin: 1rem;
   }
 }
 
@@ -8259,5 +8263,10 @@ readers do not read off random characters that represent icons */
 @media (min-width: 1536px) {
   .blog-header {
     margin: 6rem 0;
+  }
+}
+@media (max-width: 536px) {
+  .blog-header {
+    text-align: left;
   }
 }

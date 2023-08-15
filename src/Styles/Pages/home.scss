@@ -3,52 +3,72 @@
 
 .home-container {
     @include regular-text;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-
     font-weight: $font-weight-medium;
     line-height: $line-height-medium-large;
+    margin: $space-small $space-medium;
+    width: fit-content;
+
+    display: grid;
+    grid-template-areas: 
+        'homeTextArea homeRightContent'
+        'homeBottomLeftContent homeRightContent';
+    grid-template-columns: 1fr 1fr;
 
     h1 {
         @include header-text;
-        line-height: 0;
+                    
+        @media (max-width: $media-query-small) {
+            line-height: $line-height-small;
+        }
     }
     
     @media (min-width: $media-query-large) {
-        font-weight: $font-weight-medium;
         line-height: $line-height-large;
     }
-}
 
-.home-leftside-column {
-    @include flex-column;
-    margin: $space-small 0 $space-small $space-medium;
-
-    @media (min-width: $media-query-large) {
-        margin: $space-large $space-medium;
+    @media (max-width: $media-query-small) {
+        margin: 0 $space-extra-small;
+        display: grid;
+        grid-template-areas: 
+            'homeTextArea'
+            'homeRightContent'
+            'homeBottomLeftContent';
+        grid-template-columns: 1fr;
     }
 }
 
-.home-leftside-buttons {
-    display: inline-flex;
+.home-buttons {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
     column-gap: $space-small;
+
+    @media (max-width: $media-query-small) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: $space-small;
+    }
 
     @media (min-width: $media-query-large) {
         column-gap: $space-medium;
     }
 }
 
-.home-rightside-column {
-    @include flex-column;
-    margin: $space-small $space-small $space-small 0;
+.home-text-area {
+    grid-area: homeTextArea;
+}
 
-    @media (min-width: $media-query-large) {
-        margin: $space-large $space-medium;
+.home-bottom-left-content {
+    grid-area: homeBottomLeftContent;
+}
+
+.home-right-content {
+    grid-area: homeRightContent;
+
+    @media (max-width: $media-query-small) {
+        margin-bottom: $space-large;
     }
 }
 

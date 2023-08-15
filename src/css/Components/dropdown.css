@@ -8244,6 +8244,16 @@ readers do not read off random characters that represent icons */
   color: #000000;
   text-decoration: none;
 }
+@media (max-width: 536px) {
+  .dropdown-item {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1536px) {
+  .dropdown-item {
+    font-size: 24px;
+  }
+}
 
 .dropdown-container:hover .dropdown-menu {
   display: block;

@@ -8224,8 +8224,8 @@ readers do not read off random characters that represent icons */
   transition: 0.3s;
   margin: auto;
   width: 100%;
-  padding: 2rem;
   line-height: 1.5rem;
+  padding: 2rem;
 }
 .blog-post-container p {
   font-size: 16px;
@@ -8238,9 +8238,39 @@ readers do not read off random characters that represent icons */
 .blog-post-container:hover {
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 536px) {
+  .blog-post-container {
+    width: fit-content;
+  }
+}
+@media (max-width: 536px) {
+  .blog-post-container {
+    padding: 1rem;
+  }
+}
 
 .blog-post-header {
   text-align: center;
+}
+.blog-post-header h1 {
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 1rem;
+}
+@media (max-width: 536px) {
+  .blog-post-header h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1536px) {
+  .blog-post-header h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 536px) {
+  .blog-post-header h1 {
+    line-height: 2rem;
+  }
 }
 
 .blog-post-grid {
@@ -8253,6 +8283,15 @@ readers do not read off random characters that represent icons */
 @media (min-width: 1536px) {
   .blog-post-grid {
     margin-top: 1rem;
+  }
+}
+@media (max-width: 536px) {
+  .blog-post-grid {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .blog-post-grid h2 {
+    font-size: 20px;
   }
 }
 

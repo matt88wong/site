@@ -22,7 +22,7 @@ export const TopTenTunesSlider = () => {
                         <i>{tune.songRecord} - {tune.songArtist}</i> 
                     </h3>
                     <h3>
-                        Genre: {tune.genre}
+                        {TextResources.pageContent.blog.content.tunes.genreText} {tune.genre}
                     </h3>
                     <Video type='spotify' url={tune.spotifyLink}/>
                     <p>
@@ -38,7 +38,7 @@ export const TopTenTunesSlider = () => {
 
     return (
         <BlogPost title={TextResources.pageContent.blog.content.tunes.title}>
-            <ContentSlider slides={slides} />
+            <ContentSlider mobileDots slides={slides} />
         </BlogPost>
     );
 }

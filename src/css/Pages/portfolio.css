@@ -8227,6 +8227,15 @@ readers do not read off random characters that represent icons */
   line-height: 1.5rem;
   margin: 4.5rem;
 }
+.portfolio-container a {
+  color: #000000;
+  text-decoration: none;
+}
+@media (max-width: 536px) {
+  .portfolio-container {
+    font-size: 16px;
+  }
+}
 @media (min-width: 1536px) {
   .portfolio-container {
     font-size: 24px;
@@ -8235,6 +8244,12 @@ readers do not read off random characters that represent icons */
 .portfolio-container h1 {
   font-family: "Roboto";
   font-size: 36px;
+  line-height: 1rem;
+}
+@media (max-width: 536px) {
+  .portfolio-container h1 {
+    font-size: 26px;
+  }
 }
 @media (min-width: 1536px) {
   .portfolio-container h1 {
@@ -8243,9 +8258,13 @@ readers do not read off random characters that represent icons */
 }
 @media (min-width: 1536px) {
   .portfolio-container {
-    font-weight: 500;
     line-height: 2rem;
     margin: 6rem;
+  }
+}
+@media (max-width: 536px) {
+  .portfolio-container {
+    margin: 1rem;
   }
 }
 

@@ -8232,6 +8232,11 @@ readers do not read off random characters that represent icons */
   margin-right: auto;
   cursor: pointer;
 }
+@media (max-width: 536px) {
+  .navbar-logo-container {
+    margin-left: 0.5rem;
+  }
+}
 
 .navbar-link {
   font-family: "Roboto";
@@ -8244,6 +8249,16 @@ readers do not read off random characters that represent icons */
   color: #000000;
   text-decoration: none;
 }
+@media (max-width: 536px) {
+  .navbar-link {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1536px) {
+  .navbar-link {
+    font-size: 24px;
+  }
+}
 .navbar-link a:hover {
   color: #4ABDAC;
 }
@@ -8254,5 +8269,10 @@ readers do not read off random characters that represent icons */
 @media (min-width: 1536px) {
   .navbar-link:last-child {
     margin-right: 6rem;
+  }
+}
+@media (max-width: 536px) {
+  .navbar-link:last-child {
+    margin-right: 1rem;
   }
 }

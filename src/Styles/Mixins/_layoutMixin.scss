@@ -6,6 +6,10 @@
     flex-direction: column;
     //https://stackoverflow.com/questions/37386244/what-does-flex-1-mean
     flex: 1;
+        
+    @media (max-width: $media-query-small) {
+        margin: 0 $space-extra-small;
+    }
 }
 
 //Icon layout mixin
@@ -32,5 +36,9 @@
 
     &:hover {
         box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: $media-query-small) {
+        width: fit-content;
     }
 }

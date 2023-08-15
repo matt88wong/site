@@ -32,7 +32,7 @@ export const Home = () => {
 
     return (
         <div className="home-container">
-            <div className="home-leftside-column">
+            <div className="home-text-area">
                 <Fade duration={1600}>
                     <p>
                         {TextResources.pageContent.home.leftHandSide.intro.title}
@@ -57,19 +57,23 @@ export const Home = () => {
                         </a>
                         {TextResources.pageContent.home.leftHandSide.intro.outsideOfDevelopmentLine2}
                     </p>
-                    <div className='home-leftside-buttons'>
-                        {DownloadCvButton()}
-                        {PortfolioButton()}
-                        {BlogButton()}
+                </Fade>
+            </div>
+            <div className="home-bottom-left-content">
+                <Fade duration={3200}>
+                    <div className='home-buttons'>
+                            {DownloadCvButton()}
+                            {PortfolioButton()}
+                            {BlogButton()}
                     </div>
                     <SocialMediaIconBar />
                 </Fade>
             </div>
-            <div className="home-rightside-column">
-                <Fade duration={1600} direction='down'>
+            <div className='home-right-content'>
+                <Slide duration={2400}>
                     <Avatar />
                     <SkillsContentSlider />
-                </Fade>
+                </Slide>
             </div>
         </div>
     );
