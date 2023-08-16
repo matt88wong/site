@@ -1,6 +1,7 @@
 {
   "name": "my-site",
   "version": "0.1.0",
+  "homepage": "https://matt88wong.github.io/site",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -26,7 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "react-router-dom": "^6.13.0",
