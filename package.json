@@ -1,7 +1,7 @@
 {
   "name": "my-site",
   "version": "0.1.0",
-  "homepage": "https://matt88wong.github.io",
+  "homepage": "https://matt88wong.github.io/site",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
