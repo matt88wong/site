@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path={TextResources.pageLinks.portfolio.pageLink} element={<Portfolio/>} />
           <Route path={TextResources.pageLinks.blog.pageLink} element={<Blog />} />
         </Routes>
