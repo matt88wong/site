@@ -14,9 +14,9 @@ export const Blog = () => {
                 <h1>
                     {TextResources.pageContent.blog.content.title}
                 </h1>
-                <p>
+                {/* <p>
                     {TextResources.pageContent.blog.content.about}
-                </p>
+                </p> */}
             </div>
             <TopTenTunesSlider />
         </div>

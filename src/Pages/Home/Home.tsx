@@ -19,15 +19,15 @@ import '../../css/Pages/home.css';
 export const Home = () => {
 
     const BlogButton = () => {
-        return (<Button href={TextResources.pageLinks.blog.pageLink} label={TextResources.buttons.blog.label} type='slide' />);
+        return (<Button href={TextResources.pageLinks.blog.pageLink} label={TextResources.buttons.blog.label} styleType='slide' type='link' />);
     };
 
     const DownloadCvButton = () => {
-        return (<Button href={CV} label={TextResources.buttons.cv.label} target='_blank' type='offset' />);
+        return (<Button href={CV} label={TextResources.buttons.cv.label} target='_blank' styleType='offset' type='regular' />);
     };
 
     const PortfolioButton = () => {
-        return (<Button href={TextResources.pageLinks.portfolio.pageLink} label={TextResources.buttons.portfolio.label} type='fill' />);
+        return (<Button href={TextResources.pageLinks.portfolio.pageLink} label={TextResources.buttons.portfolio.label} styleType='fill' type='link' />);
     };
 
     return (

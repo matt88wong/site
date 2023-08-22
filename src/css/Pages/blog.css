@@ -8222,7 +8222,7 @@ readers do not read off random characters that represent icons */
 .blog-container {
   font-family: "Roboto";
   font-size: 20px;
-  margin: 4.5rem;
+  margin: 4.5rem 3rem;
   font-weight: 500;
   line-height: 1.5rem;
 }

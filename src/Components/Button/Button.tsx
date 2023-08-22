@@ -1,3 +1,6 @@
+//Dependencies
+import { Link } from 'react-router-dom';
+
 //Style
 import '../../css/Components/button.css';
 
@@ -6,7 +9,7 @@ import { ButtonProps } from '../../Types/Components/Button';
 
 export const Button = (props : ButtonProps) => {
 
-    const {href, label, onClick, size, target, type} = props;
+    const {href, label, onClick, size, target, styleType, type} = props;
 
     const getButtonSize = () => {
         switch(size) {
@@ -24,8 +27,8 @@ export const Button = (props : ButtonProps) => {
         };
     }
 
-    const getButtonType = () => {
-        switch(type) {
+    const getButtonStyleType = () => {
+        switch(styleType) {
             case 'regular': {
                 return 'button-regular';
             }
@@ -42,8 +45,17 @@ export const Button = (props : ButtonProps) => {
                 return 'button-regular';
         };
     }
+
+    if (type === 'link') {
+        return (
+            <Link className={'button-container ' + getButtonSize() + ' ' + getButtonStyleType()} to={href ? href : ''}>
+                {label}
+            </Link>
+        );
+    }
+
     return (
-        <a href={href} target={target} className={'button-container ' + getButtonSize() + ' ' + getButtonType()} onClick={onClick}>
+        <a href={href} target={target} className={'button-container ' + getButtonSize() + ' ' + getButtonStyleType()} onClick={onClick}>
             <span>{label}</span>
         </a>
     );

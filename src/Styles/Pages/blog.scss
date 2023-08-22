@@ -3,7 +3,7 @@
 
 .blog-container {
     @include regular-text;
-    margin: $space-medium-large;
+    margin: $space-medium-large $space-medium;
 
     font-weight: $font-weight-medium;
     line-height: $line-height-medium-large;

@@ -3,6 +3,7 @@
 
 .portfolio-item-container {
     @include card-layout;
+    width: 100%;
 }
 
 .portfolio-item-thumbnail {

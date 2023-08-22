@@ -8261,7 +8261,7 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 536px) {
   .home-container h1 {
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 }
 @media (min-width: 1536px) {
