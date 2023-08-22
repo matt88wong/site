@@ -13,3 +13,7 @@ This will run the website locally on `localhost:3000`
 ### 'gulp'
 
 If you change directory to the `src` folder, run gulp and your SCSS changes will be reflected in the locally generated CSS folder
+
+## How to deploy
+
+### 'npm run deploy'
