@@ -161,6 +161,8 @@
                         }
                     }
                 }
+            },
+            "blogPosts" : {
             }
         },
         "portfolio": {
@@ -282,6 +284,10 @@
                 "git": {
                     "iconName": "git_logo",
                     "label": "GIT"
+                },
+                "gitPages": {
+                    "iconName": "git_logo",
+                    "label": "GitHub pages"
                 },
                 "jira": {
                     "iconName": "jira_logo",

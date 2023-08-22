@@ -1,4 +1,5 @@
 export { Avatar } from './Avatar';
+export { BlogPost } from './Blog/BlogPost'
 export { Logo } from './Logo';
 export { Navbar } from './Navbar';
 export { PortfolioItem } from './PortfolioItem';

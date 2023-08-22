@@ -22,6 +22,10 @@ export const SkillsIcons = (desiredIconSet: string) => {
                             includeLabelText 
                             label={skillIconTextResources.languages.css.label} />
                         <Icon 
+                            iconName={skillIconTextResources.tools.gitPages.iconName} 
+                            includeLabelText 
+                            label={skillIconTextResources.tools.gitPages.label} />
+                        <Icon 
                             iconName={skillIconTextResources.languages.html.iconName} 
                             includeLabelText 
                             label={skillIconTextResources.languages.html.label} />

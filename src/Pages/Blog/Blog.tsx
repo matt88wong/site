@@ -2,7 +2,7 @@
 import TextResources from '../../Content/TextResources.json';
 
 //Features
-import { TopTenTunesSlider } from '../../Features';
+import { BlogPost, TopTenTunesSlider } from '../../Features';
 
 //Style
 import '../../css/Pages/blog.css';
