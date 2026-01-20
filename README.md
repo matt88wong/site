@@ -16,4 +16,10 @@ If you change directory to the `src` folder, run gulp and your SCSS changes will
 
 ## How to deploy
 
+### 'npm run build'
+
+This takes your local code and puts it into the build output fold
+
 ### 'npm run deploy'
+
+This will take the built code and deploy it to GitHub pages (ideally)
